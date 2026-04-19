@@ -93,12 +93,6 @@ export default function Home() {
             skladany jest online lub przez aplikacje mobilna, a po zatwierdzeniu
             jest wazny przez 2 lata.
           </p>
-          <Link
-            href="/eta-info/what-is-eta/"
-            className="text-[#022444] font-bold underline underline-offset-2 hover:text-[#0a3a6b] transition"
-          >
-            Czytaj wiecej o UK ETA &rarr;
-          </Link>
         </div>
       </section>
 
