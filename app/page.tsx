@@ -32,17 +32,15 @@ export default function Home() {
             <p className="text-xs md:text-sm mb-6 md:mb-8 drop-shadow" style={{ color: "#022444" }}>
               Electronic Travel Authorisation (ETA) | Polska jest krajem objetym wymogiem
             </p>
-            <div className="flex flex-col gap-3 items-center mt-2 w-full" style={{ maxWidth: "360px", margin: "0 auto" }}>
-              <a
-                href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full rounded-xl border-2 border-white bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
-                style={{ color: "white", textDecoration: "none", padding: "18px 24px" }}
-              >
-                <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>
-              </a>
-            </div>
+            <a
+              href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-xl border-2 border-white bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center mx-auto mt-2"
+              style={{ color: "white", textDecoration: "none", padding: "18px 24px", width: "100%", maxWidth: "360px" }}
+            >
+              <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>
+            </a>
           </div>
         </div>
       </section>
@@ -298,17 +296,15 @@ export default function Home() {
             Przygotuj paszport biometryczny i zloz wniosek przez aplikacje lub
             strone GOV.UK.
           </p>
-          <div style={{ maxWidth: "360px", margin: "0 auto" }}>
-            <a
-              href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full rounded-xl border-2 border-[#022444] bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
-              style={{ color: "white", textDecoration: "none", padding: "18px 24px" }}
-            >
-              <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>
-            </a>
-          </div>
+          <a
+            href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-xl border-2 border-[#022444] bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center mx-auto"
+            style={{ color: "white", textDecoration: "none", padding: "18px 24px", width: "100%", maxWidth: "360px" }}
+          >
+            <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>
+          </a>
         </div>
       </section>
     </div>
