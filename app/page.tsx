@@ -50,23 +50,23 @@ export default function Home() {
       {/* Red border line below hero */}
       <div className="h-1 bg-[#8d1812]" />
 
-      {/* Key facts - card grid */}
-      <section className="bg-white py-12">
+      {/* Key facts - floating cards on background */}
+      <section style={{ backgroundColor: "#f0f2f5" }} className="py-12">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div style={{ backgroundColor: "#eaf0f7", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "24px 16px" }}>
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">&pound;10</p>
               <p className="text-sm text-gray-500 mt-2">Oplata za wniosek</p>
             </div>
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
+            <div style={{ backgroundColor: "#eaf0f7", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "24px 16px" }}>
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">72h</p>
               <p className="text-sm text-gray-500 mt-2">Maks. czas rozpatrywania</p>
             </div>
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
+            <div style={{ backgroundColor: "#eaf0f7", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "24px 16px" }}>
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">2 lata</p>
               <p className="text-sm text-gray-500 mt-2">Okres waznosci</p>
             </div>
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
+            <div style={{ backgroundColor: "#eaf0f7", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "24px 16px" }}>
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">6 mies.</p>
               <p className="text-sm text-gray-500 mt-2">Maks. pobyt w UK</p>
             </div>
@@ -95,79 +95,71 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Application steps - white bg, card grid */}
+      {/* Application steps - white bg */}
       <section className="bg-white py-16">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8" style={{ backgroundColor: "#022444", color: "white" }}>
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Jak zlozyc wniosek UK ETA?
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
-              <div className="flex items-start space-x-4">
-                <span className="flex-shrink-0 w-12 h-12 bg-[#022444] text-white rounded-full flex items-center justify-center text-lg font-bold">
-                  1
-                </span>
-                <div>
-                  <h3 className="font-bold text-[#022444] mb-2 text-base">
-                    Pobierz aplikacje UK ETA
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Pobierz aplikacje &quot;UK ETA&quot; z App Store lub Google Play,
-                    lub wejdz na strone GOV.UK.
-                  </p>
-                </div>
+          <div className="space-y-6">
+            <div className="flex items-center space-x-4">
+              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
+                1
+              </span>
+              <div>
+                <h3 className="font-bold text-[#022444] mb-1">
+                  Pobierz aplikacje UK ETA
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Pobierz aplikacje &quot;UK ETA&quot; z App Store lub Google Play,
+                  lub wejdz na strone GOV.UK.
+                </p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
-              <div className="flex items-start space-x-4">
-                <span className="flex-shrink-0 w-12 h-12 bg-[#022444] text-white rounded-full flex items-center justify-center text-lg font-bold">
-                  2
-                </span>
-                <div>
-                  <h3 className="font-bold text-[#022444] mb-2 text-base">
-                    Zeskanuj paszport i zrob zdjecie
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Zeskanuj paszport biometryczny za pomoca telefonu i zrob
-                    zdjecie twarzy (selfie).
-                  </p>
-                </div>
+            <div className="flex items-center space-x-4">
+              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
+                2
+              </span>
+              <div>
+                <h3 className="font-bold text-[#022444] mb-1">
+                  Zeskanuj paszport i zrob zdjecie
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Zeskanuj paszport biometryczny za pomoca telefonu i zrob
+                  zdjecie twarzy (selfie).
+                </p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
-              <div className="flex items-start space-x-4">
-                <span className="flex-shrink-0 w-12 h-12 bg-[#022444] text-white rounded-full flex items-center justify-center text-lg font-bold">
-                  3
-                </span>
-                <div>
-                  <h3 className="font-bold text-[#022444] mb-2 text-base">
-                    Wypelnij formularz i zaplac (&pound;10)
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Podaj dane osobowe, informacje o podrozy i dokonaj platnosci
-                    karta lub Apple/Google Pay.
-                  </p>
-                </div>
+            <div className="flex items-center space-x-4">
+              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
+                3
+              </span>
+              <div>
+                <h3 className="font-bold text-[#022444] mb-1">
+                  Wypelnij formularz i zaplac (&pound;10)
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Podaj dane osobowe, informacje o podrozy i dokonaj platnosci
+                  karta lub Apple/Google Pay.
+                </p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
-              <div className="flex items-start space-x-4">
-                <span className="flex-shrink-0 w-12 h-12 bg-[#022444] text-white rounded-full flex items-center justify-center text-lg font-bold">
-                  4
-                </span>
-                <div>
-                  <h3 className="font-bold text-[#022444] mb-2 text-base">
-                    Oczekuj na zatwierdzenie
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Wiekszosc wnioskow jest rozpatrywana w ciagu kilku godzin,
-                    ale moze potrwac do 72 godzin.
-                  </p>
-                </div>
+            <div className="flex items-center space-x-4">
+              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
+                4
+              </span>
+              <div>
+                <h3 className="font-bold text-[#022444] mb-1">
+                  Oczekuj na zatwierdzenie
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Wiekszosc wnioskow jest rozpatrywana w ciagu kilku godzin,
+                  ale moze potrwac do 72 godzin.
+                </p>
               </div>
             </div>
           </div>
