@@ -50,25 +50,23 @@ export default function Home() {
       {/* Red border line below hero */}
       <div className="h-1 bg-[#8d1812]" />
 
-      {/* Key facts */}
-      <section className="bg-white py-12  border-b border-gray-100">
+      {/* Key facts - card grid layout */}
+      <section style={{ backgroundColor: "#f0f2f5" }} className="py-12">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">&pound;10</p>
               <p className="text-sm text-gray-500 mt-2">Oplata za wniosek</p>
             </div>
-            <div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">72h</p>
-              <p className="text-sm text-gray-500 mt-2">
-                Maks. czas rozpatrywania
-              </p>
+              <p className="text-sm text-gray-500 mt-2">Maks. czas rozpatrywania</p>
             </div>
-            <div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">2 lata</p>
               <p className="text-sm text-gray-500 mt-2">Okres waznosci</p>
             </div>
-            <div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">6 mies.</p>
               <p className="text-sm text-gray-500 mt-2">Maks. pobyt w UK</p>
             </div>
@@ -76,19 +74,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* UK ETA overview */}
-      <section className="bg-gray-50 py-16 ">
+      {/* UK ETA overview - navy background */}
+      <section style={{ backgroundColor: "#022444" }} className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white", borderRadius: "4px" }}>
+          <h2
+            className="text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6"
+            style={{ color: "white" }}
+          >
             Czym jest UK ETA?
           </h2>
-          <p className="text-gray-600 mb-4 leading-relaxed">
+          <p className="mb-4 leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>
             UK ETA (Electronic Travel Authorisation) to elektroniczna autoryzacja
             podrozy wprowadzona przez rzad Wielkiej Brytanii. Od 2 kwietnia 2025
             roku obywatele panstw UE, w tym Polski, musza uzyskac ETA przed
             podroza do Zjednoczonego Krolestwa.
           </p>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="mb-6 leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>
             ETA zastepuje dotychczasowe zasady swobodnego ruchu i jest wymagana
             w przypadku wizyt turystycznych, biznesowych lub tranzytowych. Wniosek
             skladany jest online lub przez aplikacje mobilna, a po zatwierdzeniu
@@ -97,71 +98,82 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Application steps */}
-      <section className="bg-white py-16 ">
+      {/* Application steps - white background with card grid */}
+      <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white", borderRadius: "4px" }}>
+          <h2
+            className="text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8 pb-3"
+            style={{ color: "#022444", borderBottom: "3px solid #8d1812" }}
+          >
             Jak zlozyc wniosek UK ETA?
           </h2>
 
-          <div className="space-y-6">
-            <div className="flex items-center space-x-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                1
-              </span>
-              <div>
-                <h3 className="font-bold text-[#022444] mb-1">
-                  Pobierz aplikacje UK ETA
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Pobierz aplikacje &quot;UK ETA&quot; z App Store lub Google Play,
-                  lub wejdz na strone GOV.UK.
-                </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+              <div className="flex items-start space-x-4">
+                <span className="flex-shrink-0 w-12 h-12 bg-[#022444] text-white rounded-full flex items-center justify-center text-lg font-bold">
+                  1
+                </span>
+                <div>
+                  <h3 className="font-bold text-[#022444] mb-2 text-base">
+                    Pobierz aplikacje UK ETA
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Pobierz aplikacje &quot;UK ETA&quot; z App Store lub Google Play,
+                    lub wejdz na strone GOV.UK.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                2
-              </span>
-              <div>
-                <h3 className="font-bold text-[#022444] mb-1">
-                  Zeskanuj paszport i zrob zdjecie
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Zeskanuj paszport biometryczny za pomoca telefonu i zrob
-                  zdjecie twarzy (selfie).
-                </p>
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+              <div className="flex items-start space-x-4">
+                <span className="flex-shrink-0 w-12 h-12 bg-[#022444] text-white rounded-full flex items-center justify-center text-lg font-bold">
+                  2
+                </span>
+                <div>
+                  <h3 className="font-bold text-[#022444] mb-2 text-base">
+                    Zeskanuj paszport i zrob zdjecie
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Zeskanuj paszport biometryczny za pomoca telefonu i zrob
+                    zdjecie twarzy (selfie).
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                3
-              </span>
-              <div>
-                <h3 className="font-bold text-[#022444] mb-1">
-                  Wypelnij formularz i zaplac (&pound;10)
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Podaj dane osobowe, informacje o podrozy i dokonaj platnosci
-                  karta lub Apple/Google Pay.
-                </p>
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+              <div className="flex items-start space-x-4">
+                <span className="flex-shrink-0 w-12 h-12 bg-[#022444] text-white rounded-full flex items-center justify-center text-lg font-bold">
+                  3
+                </span>
+                <div>
+                  <h3 className="font-bold text-[#022444] mb-2 text-base">
+                    Wypelnij formularz i zaplac (&pound;10)
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Podaj dane osobowe, informacje o podrozy i dokonaj platnosci
+                    karta lub Apple/Google Pay.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                4
-              </span>
-              <div>
-                <h3 className="font-bold text-[#022444] mb-1">
-                  Oczekuj na zatwierdzenie
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Wiekszosc wnioskow jest rozpatrywana w ciagu kilku godzin,
-                  ale moze potrwac do 72 godzin.
-                </p>
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+              <div className="flex items-start space-x-4">
+                <span className="flex-shrink-0 w-12 h-12 bg-[#022444] text-white rounded-full flex items-center justify-center text-lg font-bold">
+                  4
+                </span>
+                <div>
+                  <h3 className="font-bold text-[#022444] mb-2 text-base">
+                    Oczekuj na zatwierdzenie
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Wiekszosc wnioskow jest rozpatrywana w ciagu kilku godzin,
+                    ale moze potrwac do 72 godzin.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -177,19 +189,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ preview */}
-      <section className="bg-gray-50 py-16 ">
+      {/* FAQ preview - navy background */}
+      <section style={{ backgroundColor: "#022444" }} className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white", borderRadius: "4px" }}>
+          <h2
+            className="text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6"
+            style={{ color: "white" }}
+          >
             Najczesciej zadawane pytania
           </h2>
 
           <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-5">
-              <h3 className="font-bold text-[#022444] mb-2">
+            <div className="pb-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.2)" }}>
+              <h3 className="font-bold mb-2" style={{ color: "white" }}>
                 Czy Polacy potrzebuja UK ETA?
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
                 Tak. Od 2 kwietnia 2025 roku obywatele polscy (i pozostali
                 obywatele UE) musza posiadac UK ETA przed podroza do Wielkiej
                 Brytanii. Dotyczy to wizyt turystycznych, biznesowych i
@@ -197,22 +212,22 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border-b border-gray-200 pb-5">
-              <h3 className="font-bold text-[#022444] mb-2">
+            <div className="pb-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.2)" }}>
+              <h3 className="font-bold mb-2" style={{ color: "white" }}>
                 Ile kosztuje UK ETA i jak dlugo jest wazna?
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
                 Oplata za UK ETA wynosi &pound;10 (okolo 50 PLN). Autoryzacja
                 jest wazna przez 2 lata od daty wydania i pozwala na wielokrotne
                 wjazdy do UK, kazdy trwajacy do 6 miesiecy.
               </p>
             </div>
 
-            <div className="border-b border-gray-200 pb-5">
-              <h3 className="font-bold text-[#022444] mb-2">
+            <div className="pb-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.2)" }}>
+              <h3 className="font-bold mb-2" style={{ color: "white" }}>
                 Jaka jest roznica miedzy UK ETA a wiza?
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
                 UK ETA to uproszczona autoryzacja elektroniczna do krotkich
                 pobytow (do 6 miesiecy). Koszt to &pound;10, a wniosek sklada
                 sie online. Wiza brytyjska wymaga wizyty w centrum wizowym,
@@ -224,7 +239,8 @@ export default function Home() {
           <div className="mt-6">
             <Link
               href="/faq/"
-              className="text-[#022444] font-bold underline underline-offset-2 hover:text-[#0a3a6b] transition"
+              className="font-bold underline underline-offset-2 transition"
+              style={{ color: "rgba(255,255,255,0.9)" }}
             >
               Zobacz wszystkie pytania FAQ &rarr;
             </Link>
@@ -232,10 +248,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Related pages */}
-      <section className="bg-white py-16 ">
+      {/* Related pages - white background */}
+      <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white", borderRadius: "4px" }}>
+          <h2
+            className="text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8 pb-3"
+            style={{ color: "#022444", borderBottom: "3px solid #8d1812" }}
+          >
             Przydatne strony
           </h2>
 
