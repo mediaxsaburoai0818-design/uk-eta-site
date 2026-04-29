@@ -11,7 +11,7 @@ export default function Home() {
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#022444]/85 to-[#022444]/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#022444]/55 to-[#022444]/40" />
         <div className="relative max-w-3xl mx-auto px-10 md:px-16 py-16 md:py-28 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <h1
