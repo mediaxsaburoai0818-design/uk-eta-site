@@ -12,7 +12,7 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#022444]/85 to-[#022444]/70" />
-        <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-28 w-full">
+        <div className="relative max-w-3xl mx-auto px-10 md:px-16 py-16 md:py-28 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <h1
               className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg"
@@ -50,9 +50,9 @@ export default function Home() {
       {/* Red border line below hero */}
       <div className="h-1 bg-[#8d1812]" />
 
-      {/* Key facts - card grid layout */}
-      <section style={{ backgroundColor: "#f0f2f5" }} className="py-12">
-        <div className="max-w-4xl mx-auto px-6">
+      {/* Key facts - card grid */}
+      <section className="bg-white py-12">
+        <div className="max-w-3xl mx-auto px-10 md:px-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">&pound;10</p>
@@ -74,22 +74,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* UK ETA overview - navy background */}
-      <section style={{ backgroundColor: "#022444" }} className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2
-            className="text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6"
-            style={{ color: "white" }}
-          >
+      {/* UK ETA overview - light gray bg */}
+      <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
+        <div className="max-w-3xl mx-auto px-10 md:px-16">
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Czym jest UK ETA?
           </h2>
-          <p className="mb-4 leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>
+          <p className="text-gray-600 mb-4 leading-relaxed">
             UK ETA (Electronic Travel Authorisation) to elektroniczna autoryzacja
             podrozy wprowadzona przez rzad Wielkiej Brytanii. Od 2 kwietnia 2025
             roku obywatele panstw UE, w tym Polski, musza uzyskac ETA przed
             podroza do Zjednoczonego Krolestwa.
           </p>
-          <p className="mb-6 leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>
+          <p className="text-gray-600 mb-6 leading-relaxed">
             ETA zastepuje dotychczasowe zasady swobodnego ruchu i jest wymagana
             w przypadku wizyt turystycznych, biznesowych lub tranzytowych. Wniosek
             skladany jest online lub przez aplikacje mobilna, a po zatwierdzeniu
@@ -98,13 +95,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Application steps - white background with card grid */}
+      {/* Application steps - white bg, card grid */}
       <section className="bg-white py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2
-            className="text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8 pb-3"
-            style={{ color: "#022444", borderBottom: "3px solid #8d1812" }}
-          >
+        <div className="max-w-3xl mx-auto px-10 md:px-16">
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8" style={{ backgroundColor: "#022444", color: "white" }}>
             Jak zlozyc wniosek UK ETA?
           </h2>
 
@@ -189,22 +183,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ preview - navy background */}
-      <section style={{ backgroundColor: "#022444" }} className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2
-            className="text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6"
-            style={{ color: "white" }}
-          >
+      {/* FAQ preview - light gray bg */}
+      <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
+        <div className="max-w-3xl mx-auto px-10 md:px-16">
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Najczesciej zadawane pytania
           </h2>
 
           <div className="space-y-6">
-            <div className="pb-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.2)" }}>
-              <h3 className="font-bold mb-2" style={{ color: "white" }}>
+            <div className="border-b border-gray-300 pb-5">
+              <h3 className="font-bold text-[#022444] mb-2">
                 Czy Polacy potrzebuja UK ETA?
               </h3>
-              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
+              <p className="text-gray-600 text-sm leading-relaxed">
                 Tak. Od 2 kwietnia 2025 roku obywatele polscy (i pozostali
                 obywatele UE) musza posiadac UK ETA przed podroza do Wielkiej
                 Brytanii. Dotyczy to wizyt turystycznych, biznesowych i
@@ -212,22 +203,22 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="pb-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.2)" }}>
-              <h3 className="font-bold mb-2" style={{ color: "white" }}>
+            <div className="border-b border-gray-300 pb-5">
+              <h3 className="font-bold text-[#022444] mb-2">
                 Ile kosztuje UK ETA i jak dlugo jest wazna?
               </h3>
-              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
+              <p className="text-gray-600 text-sm leading-relaxed">
                 Oplata za UK ETA wynosi &pound;10 (okolo 50 PLN). Autoryzacja
                 jest wazna przez 2 lata od daty wydania i pozwala na wielokrotne
                 wjazdy do UK, kazdy trwajacy do 6 miesiecy.
               </p>
             </div>
 
-            <div className="pb-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.2)" }}>
-              <h3 className="font-bold mb-2" style={{ color: "white" }}>
+            <div className="border-b border-gray-300 pb-5">
+              <h3 className="font-bold text-[#022444] mb-2">
                 Jaka jest roznica miedzy UK ETA a wiza?
               </h3>
-              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
+              <p className="text-gray-600 text-sm leading-relaxed">
                 UK ETA to uproszczona autoryzacja elektroniczna do krotkich
                 pobytow (do 6 miesiecy). Koszt to &pound;10, a wniosek sklada
                 sie online. Wiza brytyjska wymaga wizyty w centrum wizowym,
@@ -239,8 +230,7 @@ export default function Home() {
           <div className="mt-6">
             <Link
               href="/faq/"
-              className="font-bold underline underline-offset-2 transition"
-              style={{ color: "rgba(255,255,255,0.9)" }}
+              className="text-[#022444] font-bold underline underline-offset-2 hover:text-[#0a3a6b] transition"
             >
               Zobacz wszystkie pytania FAQ &rarr;
             </Link>
@@ -248,13 +238,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Related pages - white background */}
+      {/* Related pages - white bg */}
       <section className="bg-white py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2
-            className="text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8 pb-3"
-            style={{ color: "#022444", borderBottom: "3px solid #8d1812" }}
-          >
+        <div className="max-w-3xl mx-auto px-10 md:px-16">
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Przydatne strony
           </h2>
 
@@ -307,19 +294,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-[#022444] text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      {/* CTA - light gray bg */}
+      <section style={{ backgroundColor: "#f0f2f5" }} className="py-16 text-center">
+        <div className="max-w-3xl mx-auto px-10 md:px-16">
           <h2
             className="text-2xl md:text-3xl font-bold mb-4"
             style={{
               fontFamily: "var(--font-noto-serif), serif",
-              color: "white",
+              color: "#022444",
             }}
           >
             Zacznij procedure skladania wniosku UK ETA
           </h2>
-          <p className="mb-8" style={{ color: "white" }}>
+          <p className="mb-8 text-gray-600">
             Przygotuj paszport biometryczny i zloz wniosek przez aplikacje lub
             strone GOV.UK.
           </p>
@@ -328,7 +315,7 @@ export default function Home() {
               href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full rounded-xl border-2 border-white bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
+              className="block w-full rounded-xl border-2 border-[#022444] bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
               style={{ color: "white", textDecoration: "none", padding: "18px 24px" }}
             >
               <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>
