@@ -218,61 +218,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Related pages - gray bg, with numbered circles */}
+      {/* Related pages - gray bg, icon cards */}
       <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Przydatne strony
           </h2>
 
-          <div className="space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
               {
                 href: "/eta-info/what-is-eta/",
                 title: "Czym jest UK ETA?",
                 desc: "Podstawowe informacje o systemie ETA",
+                icon: "/images/icon-info.png",
               },
               {
                 href: "/eta-info/application/",
                 title: "Sposob skladania wniosku",
                 desc: "Krok po kroku przez formularz",
+                icon: "/images/icon-form.png",
               },
               {
                 href: "/eta-info/fee/",
                 title: "Oplaty za UK ETA",
                 desc: "Szczegoly dotyczace kosztow",
+                icon: "/images/icon-fee.png",
               },
               {
                 href: "/eta-info/expiration/",
                 title: "Okres waznosci",
                 desc: "Kiedy odnowic autoryzacje ETA",
+                icon: "/images/icon-validity.png",
               },
               {
                 href: "/eta-info/required-documents/",
                 title: "Wymagane dokumenty",
                 desc: "Co przygotowac przed zlozeniem wniosku",
+                icon: "/images/icon-docs.png",
               },
               {
                 href: "/eta-info/official-gov-uk/",
                 title: "Oficjalna strona GOV.UK",
                 desc: "Link do strony rzadowej",
+                icon: "/images/icon-gov.png",
               },
-            ].map((item, index) => (
+            ].map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex items-center space-x-4 py-3 hover:bg-white transition"
-                style={{ textDecoration: "none", borderBottom: "1px solid #d5dbdb" }}
+                className="block hover:shadow-md transition"
+                style={{ textDecoration: "none", backgroundColor: "white", borderRadius: "12px", padding: "20px 16px", textAlign: "center" }}
               >
-                <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <h3 className="text-sm mb-0.5" style={{ color: "#022444", fontWeight: "bold" }}>
-                    {item.title}
-                  </h3>
-                  <p className="text-xs" style={{ color: "#666" }}>{item.desc}</p>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={item.icon} alt="" style={{ width: "48px", height: "48px", margin: "0 auto 10px" }} />
+                <h3 className="text-sm mb-1" style={{ color: "#022444", fontWeight: "bold" }}>
+                  {item.title}
+                </h3>
+                <p className="text-xs" style={{ color: "#666" }}>{item.desc}</p>
               </Link>
             ))}
           </div>
