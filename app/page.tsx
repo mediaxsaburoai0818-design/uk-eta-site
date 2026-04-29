@@ -18,18 +18,18 @@ export default function Home() {
               className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg"
               style={{
                 fontFamily: "var(--font-noto-serif), serif",
-                color: "white",
+                color: "#022444",
               }}
             >
               Elektroniczna Autoryzacja
               <br />
               Podrozy do Wielkiej Brytanii
             </h1>
-            <p className="text-base md:text-xl mb-3 md:mb-4 leading-relaxed drop-shadow" style={{ color: "white" }}>
+            <p className="text-base md:text-xl mb-3 md:mb-4 leading-relaxed drop-shadow" style={{ color: "#022444" }}>
               Od 2 kwietnia 2025 roku obywatele UE potrzebuja UK ETA.
               Rozpatrzenie wniosku trwa do 72 godzin.
             </p>
-            <p className="text-xs md:text-sm mb-6 md:mb-8 drop-shadow" style={{ color: "white" }}>
+            <p className="text-xs md:text-sm mb-6 md:mb-8 drop-shadow" style={{ color: "#022444" }}>
               Electronic Travel Authorisation (ETA) | Polska jest krajem objetym wymogiem
             </p>
             <div className="flex flex-col gap-3 items-center mt-2 w-full" style={{ maxWidth: "360px", margin: "0 auto" }}>
@@ -50,32 +50,40 @@ export default function Home() {
       {/* Red border line below hero */}
       <div className="h-1 bg-[#8d1812]" />
 
-      {/* Key facts - floating cards on background */}
+      {/* Key facts - white cards with icons on gray bg */}
       <section style={{ backgroundColor: "#f0f2f5" }} className="py-12">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div style={{ backgroundColor: "#eaf0f7", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "24px 16px" }}>
-              <p className="text-3xl md:text-4xl font-bold text-[#022444]">&pound;10</p>
-              <p className="text-sm text-gray-500 mt-2">Oplata za wniosek</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div style={{ backgroundColor: "white", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.06)", padding: "16px 12px" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/icon-payment.png" alt="" style={{ width: "40px", height: "40px", margin: "0 auto 8px" }} />
+              <p className="text-2xl md:text-3xl font-bold text-[#022444]">&pound;10</p>
+              <p className="text-xs text-gray-500 mt-1">Oplata za wniosek</p>
             </div>
-            <div style={{ backgroundColor: "#eaf0f7", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "24px 16px" }}>
-              <p className="text-3xl md:text-4xl font-bold text-[#022444]">72h</p>
-              <p className="text-sm text-gray-500 mt-2">Maks. czas rozpatrywania</p>
+            <div style={{ backgroundColor: "white", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.06)", padding: "16px 12px" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/icon-clock.png" alt="" style={{ width: "40px", height: "40px", margin: "0 auto 8px" }} />
+              <p className="text-2xl md:text-3xl font-bold text-[#022444]">72h</p>
+              <p className="text-xs text-gray-500 mt-1">Maks. czas rozpatrywania</p>
             </div>
-            <div style={{ backgroundColor: "#eaf0f7", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "24px 16px" }}>
-              <p className="text-3xl md:text-4xl font-bold text-[#022444]">2 lata</p>
-              <p className="text-sm text-gray-500 mt-2">Okres waznosci</p>
+            <div style={{ backgroundColor: "white", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.06)", padding: "16px 12px" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/icon-calendar.png" alt="" style={{ width: "40px", height: "40px", margin: "0 auto 8px" }} />
+              <p className="text-2xl md:text-3xl font-bold text-[#022444]">2 lata</p>
+              <p className="text-xs text-gray-500 mt-1">Okres waznosci</p>
             </div>
-            <div style={{ backgroundColor: "#eaf0f7", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "24px 16px" }}>
-              <p className="text-3xl md:text-4xl font-bold text-[#022444]">6 mies.</p>
-              <p className="text-sm text-gray-500 mt-2">Maks. pobyt w UK</p>
+            <div style={{ backgroundColor: "white", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.06)", padding: "16px 12px" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/icon-suitcase.png" alt="" style={{ width: "40px", height: "40px", margin: "0 auto 8px" }} />
+              <p className="text-2xl md:text-3xl font-bold text-[#022444]">6 mies.</p>
+              <p className="text-xs text-gray-500 mt-1">Maks. pobyt w UK</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* UK ETA overview - light gray bg */}
-      <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
+      {/* UK ETA overview - white bg */}
+      <section className="bg-white py-16">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Czym jest UK ETA?
@@ -95,72 +103,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Application steps - white bg */}
-      <section className="bg-white py-16">
+      {/* Application steps - gray bg, underline style */}
+      <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Jak zlozyc wniosek UK ETA?
           </h2>
 
           <div className="space-y-6">
-            <div className="flex items-center space-x-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                1
-              </span>
-              <div>
-                <h3 className="font-bold text-[#022444] mb-1">
-                  Pobierz aplikacje UK ETA
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Pobierz aplikacje &quot;UK ETA&quot; z App Store lub Google Play,
-                  lub wejdz na strone GOV.UK.
-                </p>
-              </div>
+            <div>
+              <h3 className="font-bold text-[#022444] mb-1 pb-2" style={{ borderBottom: "2px solid #022444" }}>
+                Pobierz aplikacje UK ETA
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Pobierz aplikacje &quot;UK ETA&quot; z App Store lub Google Play,
+                lub wejdz na strone GOV.UK.
+              </p>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                2
-              </span>
-              <div>
-                <h3 className="font-bold text-[#022444] mb-1">
-                  Zeskanuj paszport i zrob zdjecie
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Zeskanuj paszport biometryczny za pomoca telefonu i zrob
-                  zdjecie twarzy (selfie).
-                </p>
-              </div>
+            <div>
+              <h3 className="font-bold text-[#022444] mb-1 pb-2" style={{ borderBottom: "2px solid #022444" }}>
+                Zeskanuj paszport i zrob zdjecie
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Zeskanuj paszport biometryczny za pomoca telefonu i zrob
+                zdjecie twarzy (selfie).
+              </p>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                3
-              </span>
-              <div>
-                <h3 className="font-bold text-[#022444] mb-1">
-                  Wypelnij formularz i zaplac (&pound;10)
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Podaj dane osobowe, informacje o podrozy i dokonaj platnosci
-                  karta lub Apple/Google Pay.
-                </p>
-              </div>
+            <div>
+              <h3 className="font-bold text-[#022444] mb-1 pb-2" style={{ borderBottom: "2px solid #022444" }}>
+                Wypelnij formularz i zaplac (&pound;10)
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Podaj dane osobowe, informacje o podrozy i dokonaj platnosci
+                karta lub Apple/Google Pay.
+              </p>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                4
-              </span>
-              <div>
-                <h3 className="font-bold text-[#022444] mb-1">
-                  Oczekuj na zatwierdzenie
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Wiekszosc wnioskow jest rozpatrywana w ciagu kilku godzin,
-                  ale moze potrwac do 72 godzin.
-                </p>
-              </div>
+            <div>
+              <h3 className="font-bold text-[#022444] mb-1 pb-2" style={{ borderBottom: "2px solid #022444" }}>
+                Oczekuj na zatwierdzenie
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Wiekszosc wnioskow jest rozpatrywana w ciagu kilku godzin,
+                ale moze potrwac do 72 godzin.
+              </p>
             </div>
           </div>
 
@@ -175,8 +163,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ preview - light gray bg */}
-      <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
+      {/* FAQ preview - white bg */}
+      <section className="bg-white py-16">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Najczesciej zadawane pytania
@@ -230,14 +218,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Related pages - white bg */}
-      <section className="bg-white py-16">
+      {/* Related pages - gray bg, with numbered circles */}
+      <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Przydatne strony
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="space-y-4">
             {[
               {
                 href: "/eta-info/what-is-eta/",
@@ -269,25 +257,30 @@ export default function Home() {
                 title: "Oficjalna strona GOV.UK",
                 desc: "Link do strony rzadowej",
               },
-            ].map((item) => (
+            ].map((item, index) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block py-4 border-b border-gray-200 hover:bg-gray-50 transition"
-                style={{ textDecoration: "none" }}
+                className="flex items-center space-x-4 py-3 hover:bg-white transition"
+                style={{ textDecoration: "none", borderBottom: "1px solid #d5dbdb" }}
               >
-                <h3 className="text-sm mb-1" style={{ color: "#333", fontWeight: "bold" }}>
-                  {item.title}
-                </h3>
-                <p className="text-xs" style={{ color: "#666" }}>{item.desc}</p>
+                <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="text-sm mb-0.5" style={{ color: "#022444", fontWeight: "bold" }}>
+                    {item.title}
+                  </h3>
+                  <p className="text-xs" style={{ color: "#666" }}>{item.desc}</p>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA - light gray bg */}
-      <section style={{ backgroundColor: "#f0f2f5" }} className="py-16 text-center">
+      {/* CTA - white bg */}
+      <section className="bg-white py-16 text-center">
         <div className="max-w-3xl mx-auto px-10 md:px-16">
           <h2
             className="text-2xl md:text-3xl font-bold mb-4"

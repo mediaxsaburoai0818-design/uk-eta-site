@@ -166,12 +166,13 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-              <div className="mt-4 p-3 bg-[#022444] border border-white/10 rounded text-xs text-gray-200">
+              <div className="mt-4 p-3 bg-[#022444] border border-white/10 rounded text-xs" style={{ color: "white" }}>
                 Niniejsza strona nie jest powiazana z rzadem Wielkiej Brytanii. Oficjalna
                 strona UK ETA:{" "}
                 <a
                   href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
-                  className="text-gray-200 underline hover:text-white"
+                  className="underline hover:text-white"
+                  style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -185,7 +186,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-white/10 py-4">
           <div className="max-w-6xl mx-auto px-4">
-            <p className="text-xs text-center text-gray-200">
+            <p className="text-xs text-center" style={{ color: "white" }}>
               &copy; {new Date().getFullYear()} UK ETA Online. Wszelkie prawa
               zastrzezone. | Strona informacyjna &mdash; nie jest oficjalna
               strona rzadu Wielkiej Brytanii.
