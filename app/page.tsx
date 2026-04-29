@@ -216,64 +216,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Related pages - gray bg, icon cards */}
+      {/* Related pages - gray bg, photo cards */}
       <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
         <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Przydatne strony
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
               {
                 href: "/eta-info/what-is-eta/",
                 title: "Czym jest UK ETA?",
-                desc: "Podstawowe informacje o systemie ETA",
-                icon: "/images/icon-info.png",
+                img: "/images/card-what-is-eta.png",
               },
               {
                 href: "/eta-info/application/",
                 title: "Sposob skladania wniosku",
-                desc: "Krok po kroku przez formularz",
-                icon: "/images/icon-form.png",
+                img: "/images/card-application.png",
               },
               {
                 href: "/eta-info/fee/",
                 title: "Oplaty za UK ETA",
-                desc: "Szczegoly dotyczace kosztow",
-                icon: "/images/icon-fee.png",
+                img: "/images/card-fee.png",
               },
               {
                 href: "/eta-info/expiration/",
                 title: "Okres waznosci",
-                desc: "Kiedy odnowic autoryzacje ETA",
-                icon: "/images/icon-validity.png",
+                img: "/images/card-validity.png",
               },
               {
                 href: "/eta-info/required-documents/",
                 title: "Wymagane dokumenty",
-                desc: "Co przygotowac przed zlozeniem wniosku",
-                icon: "/images/icon-docs.png",
+                img: "/images/card-documents.png",
               },
               {
                 href: "/eta-info/official-gov-uk/",
                 title: "Oficjalna strona GOV.UK",
-                desc: "Link do strony rzadowej",
-                icon: "/images/icon-gov.png",
+                img: "/images/card-gov-uk.png",
               },
             ].map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block hover:shadow-md transition"
-                style={{ textDecoration: "none", backgroundColor: "white", borderRadius: "12px", padding: "20px 16px", textAlign: "center" }}
+                className="block hover:shadow-md transition overflow-hidden"
+                style={{ textDecoration: "none", backgroundColor: "white", borderRadius: "8px" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={item.icon} alt="" style={{ width: "48px", height: "48px", margin: "0 auto 10px" }} />
-                <h3 className="text-sm mb-1" style={{ color: "#022444", fontWeight: "bold" }}>
-                  {item.title}
-                </h3>
-                <p className="text-xs" style={{ color: "#666" }}>{item.desc}</p>
+                <img src={item.img} alt="" style={{ width: "100%", height: "120px", objectFit: "cover" }} />
+                <div style={{ padding: "12px" }}>
+                  <h3 className="text-xs sm:text-sm" style={{ color: "#022444", fontWeight: "bold" }}>
+                    {item.title}
+                  </h3>
+                </div>
               </Link>
             ))}
           </div>
@@ -307,6 +302,24 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* Sticky bottom CTA bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-50" style={{ backgroundColor: "rgba(2,36,68,0.95)", backdropFilter: "blur(8px)" }}>
+        <div className="max-w-3xl mx-auto px-4 py-3 text-center">
+          <p className="text-xs mb-2" style={{ color: "rgba(255,255,255,0.8)" }}>
+            Zloz wniosek co najmniej 3 dni przed wyjazdem.
+          </p>
+          <a
+            href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-lg bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center mx-auto"
+            style={{ color: "white", textDecoration: "none", padding: "12px 20px", width: "100%", maxWidth: "320px" }}
+          >
+            <span style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>&#10003; Zloz wniosek UK ETA</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
