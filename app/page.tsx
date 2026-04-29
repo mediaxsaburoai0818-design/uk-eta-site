@@ -19,8 +19,8 @@ export default function Home() {
               className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg"
               style={{
                 fontFamily: "var(--font-noto-serif), serif",
-                color: "white",
-                textShadow: "0 2px 8px rgba(0,0,0,0.4)",
+                color: "#022444",
+                textShadow: "0 2px 8px rgba(255,255,255,0.5)",
               }}
             >
               Elektroniczna Autoryzacja
@@ -256,7 +256,7 @@ export default function Home() {
       </section>
 
       {/* CTA - white bg with extra bottom margin for sticky bar */}
-      <section className="bg-white py-16 pb-24 text-center">
+      <section className="bg-white pt-16 pb-40 text-center">
         <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2
             className="text-2xl md:text-3xl font-bold mb-4"
@@ -293,7 +293,7 @@ export default function Home() {
             href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-lg bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
+            className="block rounded-xl bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center mx-auto"
             style={{ color: "white", textDecoration: "none", padding: "12px 20px", width: "100%", maxWidth: "320px" }}
           >
             <span style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>&#10003; Zloz wniosek UK ETA</span>
