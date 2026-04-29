@@ -256,7 +256,7 @@ export default function Home() {
       </section>
 
       {/* CTA - white bg with extra bottom margin for sticky bar */}
-      <section className="bg-white pt-16 pb-40 text-center">
+      <section className="bg-white pt-16 pb-40 text-center" style={{ marginBottom: "20px" }}>
         <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2
             className="text-2xl md:text-3xl font-bold mb-4"
