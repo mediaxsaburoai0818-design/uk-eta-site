@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FAQAccordion from "./FAQAccordion";
 
 export default function Home() {
   return (
@@ -18,18 +19,19 @@ export default function Home() {
               className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg"
               style={{
                 fontFamily: "var(--font-noto-serif), serif",
-                color: "#022444",
+                color: "white",
+                textShadow: "0 2px 8px rgba(0,0,0,0.4)",
               }}
             >
               Elektroniczna Autoryzacja
               <br />
               Podrozy do Wielkiej Brytanii
             </h1>
-            <p className="text-base md:text-xl mb-3 md:mb-4 leading-relaxed drop-shadow" style={{ color: "#022444" }}>
+            <p className="text-base md:text-xl mb-3 md:mb-4 leading-relaxed drop-shadow" style={{ color: "white", textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
               Od 2 kwietnia 2025 roku obywatele UE potrzebuja UK ETA.
               Rozpatrzenie wniosku trwa do 72 godzin.
             </p>
-            <p className="text-xs md:text-sm mb-6 md:mb-8 drop-shadow" style={{ color: "#022444" }}>
+            <p className="text-xs md:text-sm mb-6 md:mb-8 drop-shadow" style={{ color: "white", textShadow: "0 1px 4px rgba(0,0,0,0.3)" }}>
               Electronic Travel Authorisation (ETA) | Polska jest krajem objetym wymogiem
             </p>
             <a
@@ -161,49 +163,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ preview - white bg */}
+      {/* FAQ preview - white bg, accordion */}
       <section className="bg-white py-16">
         <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Najczesciej zadawane pytania
           </h2>
 
-          <div className="space-y-6">
-            <div className="border-b border-gray-300 pb-5">
-              <h3 className="font-bold text-[#022444] mb-2">
-                Czy Polacy potrzebuja UK ETA?
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Tak. Od 2 kwietnia 2025 roku obywatele polscy (i pozostali
-                obywatele UE) musza posiadac UK ETA przed podroza do Wielkiej
-                Brytanii. Dotyczy to wizyt turystycznych, biznesowych i
-                tranzytowych.
-              </p>
-            </div>
-
-            <div className="border-b border-gray-300 pb-5">
-              <h3 className="font-bold text-[#022444] mb-2">
-                Ile kosztuje UK ETA i jak dlugo jest wazna?
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Oplata za UK ETA wynosi &pound;10 (okolo 50 PLN). Autoryzacja
-                jest wazna przez 2 lata od daty wydania i pozwala na wielokrotne
-                wjazdy do UK, kazdy trwajacy do 6 miesiecy.
-              </p>
-            </div>
-
-            <div className="border-b border-gray-300 pb-5">
-              <h3 className="font-bold text-[#022444] mb-2">
-                Jaka jest roznica miedzy UK ETA a wiza?
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                UK ETA to uproszczona autoryzacja elektroniczna do krotkich
-                pobytow (do 6 miesiecy). Koszt to &pound;10, a wniosek sklada
-                sie online. Wiza brytyjska wymaga wizyty w centrum wizowym,
-                kosztuje od &pound;100 i pozwala na dluzsze pobyty lub prace.
-              </p>
-            </div>
-          </div>
+          <FAQAccordion items={[
+            {
+              question: "Czy Polacy potrzebuja UK ETA?",
+              answer: "Tak. Od 2 kwietnia 2025 roku obywatele polscy (i pozostali obywatele UE) musza posiadac UK ETA przed podroza do Wielkiej Brytanii. Dotyczy to wizyt turystycznych, biznesowych i tranzytowych.",
+            },
+            {
+              question: "Ile kosztuje UK ETA i jak dlugo jest wazna?",
+              answer: "Oplata za UK ETA wynosi £10 (okolo 50 PLN). Autoryzacja jest wazna przez 2 lata od daty wydania i pozwala na wielokrotne wjazdy do UK, kazdy trwajacy do 6 miesiecy.",
+            },
+            {
+              question: "Jaka jest roznica miedzy UK ETA a wiza?",
+              answer: "UK ETA to uproszczona autoryzacja elektroniczna do krotkich pobytow (do 6 miesiecy). Koszt to £10, a wniosek sklada sie online. Wiza brytyjska wymaga wizyty w centrum wizowym, kosztuje od £100 i pozwala na dluzsze pobyty lub prace.",
+            },
+          ]} />
 
           <div className="mt-6">
             <Link
@@ -275,8 +255,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA - white bg */}
-      <section className="bg-white py-16 text-center">
+      {/* CTA - white bg with extra bottom margin for sticky bar */}
+      <section className="bg-white py-16 pb-24 text-center">
         <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2
             className="text-2xl md:text-3xl font-bold mb-4"
@@ -305,7 +285,7 @@ export default function Home() {
 
       {/* Sticky bottom CTA bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50" style={{ backgroundColor: "rgba(2,36,68,0.95)", backdropFilter: "blur(8px)" }}>
-        <div className="max-w-3xl mx-auto px-4 py-3 text-center">
+        <div className="max-w-3xl mx-auto px-4 py-3 flex flex-col items-center text-center">
           <p className="text-xs mb-2" style={{ color: "rgba(255,255,255,0.8)" }}>
             Zloz wniosek co najmniej 3 dni przed wyjazdem.
           </p>
@@ -313,7 +293,7 @@ export default function Home() {
             href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-lg bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center mx-auto"
+            className="block rounded-lg bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
             style={{ color: "white", textDecoration: "none", padding: "12px 20px", width: "100%", maxWidth: "320px" }}
           >
             <span style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>&#10003; Zloz wniosek UK ETA</span>
