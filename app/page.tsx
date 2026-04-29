@@ -38,8 +38,8 @@ export default function Home() {
               href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
               target="_blank"
               rel="noopener noreferrer"
-              className="block rounded-xl border-2 border-white bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center mx-auto mt-2"
-              style={{ color: "white", textDecoration: "none", padding: "18px 24px", width: "100%", maxWidth: "360px" }}
+              className="block transition shadow-lg"
+              style={{ color: "white", textDecoration: "none", padding: "18px 24px", width: "100%", maxWidth: "360px", marginLeft: "auto", marginRight: "auto", marginTop: "8px", textAlign: "center", backgroundColor: "#8d1812", borderRadius: "12px", border: "2px solid white" }}
             >
               <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>
             </a>
@@ -275,8 +275,8 @@ export default function Home() {
             href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-xl border-2 border-[#022444] bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center mx-auto"
-            style={{ color: "white", textDecoration: "none", padding: "18px 24px", width: "100%", maxWidth: "360px" }}
+            className="block transition shadow-lg"
+            style={{ color: "white", textDecoration: "none", padding: "18px 24px", width: "100%", maxWidth: "360px", marginLeft: "auto", marginRight: "auto", textAlign: "center", backgroundColor: "#8d1812", borderRadius: "12px", border: "2px solid #022444" }}
           >
             <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>
           </a>
@@ -293,8 +293,8 @@ export default function Home() {
             href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-xl bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center mx-auto"
-            style={{ color: "white", textDecoration: "none", padding: "12px 20px", width: "100%", maxWidth: "320px" }}
+            className="block transition shadow-lg"
+            style={{ color: "white", textDecoration: "none", padding: "12px 20px", width: "100%", maxWidth: "320px", marginLeft: "auto", marginRight: "auto", textAlign: "center", backgroundColor: "#8d1812", borderRadius: "12px" }}
           >
             <span style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>&#10003; Zloz wniosek UK ETA</span>
           </a>
