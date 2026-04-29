@@ -53,6 +53,7 @@ html {
   font-size: 1.125rem;
   line-height: 1.4;
   word-break: break-word;
+  border-radius: 4px;
 }
 @media (max-width: 767px) {
   .heading-band {

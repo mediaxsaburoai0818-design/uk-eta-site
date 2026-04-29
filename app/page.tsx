@@ -51,7 +51,7 @@ export default function Home() {
       <div className="h-1 bg-[#8d1812]" />
 
       {/* Key facts */}
-      <section className="py-12 bg-white border-b border-gray-100">
+      <section className="bg-white py-12  border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
@@ -77,9 +77,9 @@ export default function Home() {
       </section>
 
       {/* UK ETA overview */}
-      <section className="py-16 bg-gray-50">
+      <section className="bg-gray-50 py-16 ">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white", borderRadius: "4px" }}>
             Czym jest UK ETA?
           </h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
@@ -98,9 +98,9 @@ export default function Home() {
       </section>
 
       {/* Application steps */}
-      <section className="py-16 bg-white">
+      <section className="bg-white py-16 ">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white", borderRadius: "4px" }}>
             Jak zlozyc wniosek UK ETA?
           </h2>
 
@@ -178,9 +178,9 @@ export default function Home() {
       </section>
 
       {/* FAQ preview */}
-      <section className="py-16 bg-gray-50">
+      <section className="bg-gray-50 py-16 ">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white", borderRadius: "4px" }}>
             Najczesciej zadawane pytania
           </h2>
 
@@ -233,9 +233,9 @@ export default function Home() {
       </section>
 
       {/* Related pages */}
-      <section className="py-16 bg-white">
+      <section className="bg-white py-16 ">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white", borderRadius: "4px" }}>
             Przydatne strony
           </h2>
 
