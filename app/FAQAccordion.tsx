@@ -11,23 +11,23 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-4">
       {items.map((item, index) => (
-        <div key={index} className="border-b border-gray-300">
+        <div key={index} className="border-b border-gray-300 pb-4">
           <button
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            className="w-full flex items-center justify-between py-4 text-left"
+            className="w-full flex items-center justify-between py-3 text-left"
             style={{ background: "none", border: "none", cursor: "pointer" }}
           >
-            <span className="font-bold text-[#022444] text-base pr-4">
+            <h3 className="font-bold pr-4" style={{ color: "#022444", margin: 0, fontSize: "inherit" }}>
               {item.question}
-            </span>
-            <span className="flex-shrink-0 text-[#022444] text-xl font-bold">
+            </h3>
+            <span className="flex-shrink-0 text-xl font-bold" style={{ color: "#022444" }}>
               {openIndex === index ? "−" : "+"}
             </span>
           </button>
           {openIndex === index && (
-            <div className="pb-4">
+            <div className="pt-2">
               <p className="text-gray-600 text-sm leading-relaxed">
                 {item.answer}
               </p>
