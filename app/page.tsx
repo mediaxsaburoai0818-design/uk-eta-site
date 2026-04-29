@@ -12,23 +12,24 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#022444]/85 to-[#022444]/70" />
-        <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-28 w-full">
+        <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-28 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <h1
-              className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight text-white drop-shadow-lg"
+              className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg"
               style={{
                 fontFamily: "var(--font-noto-serif), serif",
+                color: "white",
               }}
             >
               Elektroniczna Autoryzacja
               <br />
               Podrozy do Wielkiej Brytanii
             </h1>
-            <p className="text-base md:text-xl mb-3 md:mb-4 leading-relaxed drop-shadow" style={{ color: "#d0d0d0" }}>
+            <p className="text-base md:text-xl mb-3 md:mb-4 leading-relaxed drop-shadow" style={{ color: "white" }}>
               Od 2 kwietnia 2025 roku obywatele UE potrzebuja UK ETA.
               Rozpatrzenie wniosku trwa do 72 godzin.
             </p>
-            <p className="text-xs md:text-sm mb-6 md:mb-8 drop-shadow" style={{ color: "#b0b0b0" }}>
+            <p className="text-xs md:text-sm mb-6 md:mb-8 drop-shadow" style={{ color: "white" }}>
               Electronic Travel Authorisation (ETA) | Polska jest krajem objetym wymogiem
             </p>
             <div className="flex flex-col gap-3 items-center mt-2 w-full" style={{ maxWidth: "360px", margin: "0 auto" }}>
@@ -36,7 +37,7 @@ export default function Home() {
                 href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full rounded bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
+                className="block w-full rounded-xl border-2 border-white bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
                 style={{ color: "white", textDecoration: "none", padding: "18px 24px" }}
               >
                 <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>
@@ -51,7 +52,7 @@ export default function Home() {
 
       {/* Key facts */}
       <section className="py-12 bg-white border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <p className="text-3xl md:text-4xl font-bold text-[#022444]">&pound;10</p>
@@ -76,8 +77,8 @@ export default function Home() {
       </section>
 
       {/* UK ETA overview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Czym jest UK ETA?
           </h2>
@@ -97,8 +98,8 @@ export default function Home() {
       </section>
 
       {/* Application steps */}
-      <section className="py-16 bg-[#F5F5F5]">
-        <div className="max-w-3xl mx-auto px-4">
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Jak zlozyc wniosek UK ETA?
           </h2>
@@ -177,8 +178,8 @@ export default function Home() {
       </section>
 
       {/* FAQ preview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Najczesciej zadawane pytania
           </h2>
@@ -232,8 +233,8 @@ export default function Home() {
       </section>
 
       {/* Related pages */}
-      <section className="py-16 bg-[#F5F5F5]">
-        <div className="max-w-3xl mx-auto px-4">
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Przydatne strony
           </h2>
@@ -289,7 +290,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="py-16 bg-[#022444] text-white text-center">
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-6">
           <h2
             className="text-2xl md:text-3xl font-bold mb-4"
             style={{
@@ -308,7 +309,7 @@ export default function Home() {
               href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full rounded bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
+              className="block w-full rounded-xl border-2 border-white bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
               style={{ color: "white", textDecoration: "none", padding: "18px 24px" }}
             >
               <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>Zloz wniosek UK ETA</span>

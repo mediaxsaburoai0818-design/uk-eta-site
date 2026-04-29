@@ -73,45 +73,80 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
-      <Breadcrumb items={[{ label: "FAQ" }]} />
+    <div>
+      <section className="bg-white">
+        <div className="max-w-4xl mx-auto px-6 pt-12 pb-8">
+          <Breadcrumb items={[{ label: "FAQ" }]} />
+          <h1
+            className="text-3xl md:text-4xl font-bold text-[#022444] mb-4"
+            style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          >
+            Najczesciej zadawane pytania (FAQ)
+          </h1>
+          <p className="text-gray-600 leading-relaxed">
+            Odpowiedzi na najczesciej zadawane pytania dotyczace systemu UK ETA i
+            podrozowania do Wielkiej Brytanii.
+          </p>
+        </div>
+      </section>
 
-      <h1
-        className="text-3xl md:text-4xl font-bold text-[#022444] mb-4"
-        style={{ fontFamily: "var(--font-noto-serif), serif" }}
-      >
-        Najczesciej zadawane pytania (FAQ)
-      </h1>
-      <p className="text-gray-600 mb-10 leading-relaxed">
-        Odpowiedzi na najczesciej zadawane pytania dotyczace systemu UK ETA i
-        podrozowania do Wielkiej Brytanii.
-      </p>
-
-      <div className="space-y-6">
-        {faqs.map((faq, i) => (
-          <div key={i} className="border-b border-gray-200 pb-5">
-            <h2 className="font-bold text-[#022444] mb-2 text-base">
-              {faq.q}
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+      <section className="bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6 py-10">
+          <div className="space-y-6">
+            {faqs.slice(0, 5).map((faq, i) => (
+              <div key={i} className="border-b border-gray-200 pb-5">
+                <h2 className="font-bold text-[#022444] mb-2 text-base">{faq.q}</h2>
+                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
 
-      <div className="mt-10 bg-[#F5F5F5] border border-gray-200 rounded p-6">
-        <h2 className="font-bold text-[#022444] mb-2">
-          Nie znalazles odpowiedzi?
-        </h2>
-        <p className="text-gray-600 text-sm mb-4">
-          Skontaktuj sie z nami, a odpowiemy na Twoje pytanie.
-        </p>
-        <Link
-          href="/site-info/contact/"
-          className="inline-block bg-[#022444] hover:bg-[#0a3a6b] text-white px-5 py-2 rounded font-bold text-sm transition"
-        >
-          Skontaktuj sie z nami
-        </Link>
-      </div>
+      <section className="bg-white">
+        <div className="max-w-4xl mx-auto px-6 py-10">
+          <div className="space-y-6">
+            {faqs.slice(5, 10).map((faq, i) => (
+              <div key={i} className="border-b border-gray-200 pb-5">
+                <h2 className="font-bold text-[#022444] mb-2 text-base">{faq.q}</h2>
+                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6 py-10">
+          <div className="space-y-6">
+            {faqs.slice(10).map((faq, i) => (
+              <div key={i} className="border-b border-gray-200 pb-5">
+                <h2 className="font-bold text-[#022444] mb-2 text-base">{faq.q}</h2>
+                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="max-w-4xl mx-auto px-6 py-10">
+          <div className="bg-gray-50 border border-gray-200 rounded p-6">
+            <h2 className="font-bold text-[#022444] mb-2">
+              Nie znalazles odpowiedzi?
+            </h2>
+            <p className="text-gray-600 text-sm mb-4">
+              Skontaktuj sie z nami, a odpowiemy na Twoje pytanie.
+            </p>
+            <Link
+              href="/site-info/contact/"
+              className="inline-block bg-[#022444] hover:bg-[#0a3a6b] text-white px-5 py-2 rounded font-bold text-sm transition"
+            >
+              Skontaktuj sie z nami
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

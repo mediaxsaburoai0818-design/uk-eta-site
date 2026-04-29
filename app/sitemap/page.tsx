@@ -43,19 +43,22 @@ const sections = [
 
 export default function Sitemap() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
-      <Breadcrumb items={[{ label: "Mapa strony" }]} />
+    <div>
+      <section className="bg-white">
+        <div className="max-w-4xl mx-auto px-6 pt-12 pb-8">
+          <Breadcrumb items={[{ label: "Mapa strony" }]} />
+          <h1
+            className="text-3xl md:text-4xl font-bold text-[#022444] mb-4"
+            style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          >
+            Mapa strony
+          </h1>
+        </div>
+      </section>
 
-      <h1
-        className="text-3xl md:text-4xl font-bold text-[#022444] mb-8"
-        style={{ fontFamily: "var(--font-noto-serif), serif" }}
-      >
-        Mapa strony
-      </h1>
-
-      <div className="space-y-8">
-        {sections.map((section) => (
-          <div key={section.title}>
+      {sections.map((section, i) => (
+        <section key={section.title} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+          <div className="max-w-4xl mx-auto px-6 py-10">
             <h2 className="font-bold text-[#022444] text-lg mb-3 border-b border-gray-200 pb-2">
               {section.title}
             </h2>
@@ -72,8 +75,8 @@ export default function Sitemap() {
               ))}
             </ul>
           </div>
-        ))}
-      </div>
+        </section>
+      ))}
     </div>
   );
 }
