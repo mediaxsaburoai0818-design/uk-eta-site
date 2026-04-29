@@ -12,7 +12,7 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#022444]/55 to-[#022444]/40" />
-        <div className="relative max-w-3xl mx-auto px-10 md:px-16 py-16 md:py-28 w-full">
+        <div className="relative max-w-3xl mx-auto px-6 md:px-16 py-16 md:py-28 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <h1
               className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg"
@@ -50,7 +50,7 @@ export default function Home() {
 
       {/* Key facts - white cards with icons on gray bg */}
       <section style={{ backgroundColor: "#f0f2f5" }} className="py-12">
-        <div className="max-w-3xl mx-auto px-10 md:px-16">
+        <div className="max-w-3xl mx-auto px-6 md:px-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div style={{ backgroundColor: "white", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.06)", padding: "16px 12px" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -82,7 +82,7 @@ export default function Home() {
 
       {/* UK ETA overview - white bg */}
       <section className="bg-white py-16">
-        <div className="max-w-3xl mx-auto px-10 md:px-16">
+        <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Czym jest UK ETA?
           </h2>
@@ -103,7 +103,7 @@ export default function Home() {
 
       {/* Application steps - gray bg, underline style */}
       <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
-        <div className="max-w-3xl mx-auto px-10 md:px-16">
+        <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Jak zlozyc wniosek UK ETA?
           </h2>
@@ -163,7 +163,7 @@ export default function Home() {
 
       {/* FAQ preview - white bg */}
       <section className="bg-white py-16">
-        <div className="max-w-3xl mx-auto px-10 md:px-16">
+        <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Najczesciej zadawane pytania
           </h2>
@@ -218,7 +218,7 @@ export default function Home() {
 
       {/* Related pages - gray bg, icon cards */}
       <section style={{ backgroundColor: "#f0f2f5" }} className="py-16">
-        <div className="max-w-3xl mx-auto px-10 md:px-16">
+        <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Przydatne strony
           </h2>
@@ -282,7 +282,7 @@ export default function Home() {
 
       {/* CTA - white bg */}
       <section className="bg-white py-16 text-center">
-        <div className="max-w-3xl mx-auto px-10 md:px-16">
+        <div className="max-w-3xl mx-auto px-6 md:px-16">
           <h2
             className="text-2xl md:text-3xl font-bold mb-4"
             style={{

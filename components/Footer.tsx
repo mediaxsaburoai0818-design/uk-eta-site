@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       {/* Main footer */}
-      <div className="bg-[#011a33]">
+      <div className="bg-[#011a33]" style={{ color: "white" }}>
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Site info */}
@@ -28,7 +28,7 @@ export default function Footer() {
               <h3 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: "white" }}>
                 Informacje o UK ETA
               </h3>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-sm" style={{ color: "white" }}>
                 <li>
                   <Link
                     href="/eta-info/what-is-eta/"
@@ -85,7 +85,7 @@ export default function Footer() {
               <h3 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: "white" }}>
                 Informacje o stronie
               </h3>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-sm" style={{ color: "white" }}>
                 <li>
                   <Link
                     href="/site-info/about/"
@@ -134,7 +134,7 @@ export default function Footer() {
               <h3 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: "white" }}>
                 Strony oficjalne
               </h3>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-sm" style={{ color: "white" }}>
                 <li>
                   <a
                     href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
