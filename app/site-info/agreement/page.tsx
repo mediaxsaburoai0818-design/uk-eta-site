@@ -3,8 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Regulamin - UK ETA Online",
-  description: "Regulamin korzystania z serwisu UK ETA Online. Warunki uzytkowania strony.",
+  title: "Regulamin",
+  description:
+    "Regulamin korzystania z serwisu UK ETA Online - warunki uzytkowania i odpowiedzialnosc serwisu.",
 };
 
 export default function Agreement() {

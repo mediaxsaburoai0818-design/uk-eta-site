@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Sprawdzenie statusu wniosku UK ETA",
+  title: "Sprawdzenie statusu wniosku UK ETA 2026 - znaczenie statusow",
   description:
-    "Jak sprawdzic status wniosku UK ETA. Mozliwe statusy i co oznaczaja.",
+    "Sprawdz status wniosku UK ETA: znaczenie statusow (oczekuje, zatwierdzono, odrzucono) i typowy czas zatwierdzenia 3 dni.",
 };
 
 export default function StatusCheck() {

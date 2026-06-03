@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Sposob skladania wniosku UK ETA - Przewodnik krok po kroku",
+  title: "Jak zlozyc wniosek UK ETA 2026 - przewodnik krok po kroku",
   description:
-    "Szczegolowy przewodnik po procedurze skladania wniosku UK ETA. Krok po kroku od przygotowania dokumentow do zatwierdzenia.",
+    "Jak zlozyc wniosek o UK ETA krok po kroku — od zgromadzenia dokumentow do zatwierdzenia. Zwykle decyzja w ciagu 3 dni, czesto w kilka minut.",
 };
 
 export default function Application() {

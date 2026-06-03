@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Oficjalna strona GOV.UK - UK ETA",
+  title: "Oficjalna strona GOV.UK UK ETA - jak rozpoznac falszywe strony",
   description:
-    "Informacje o oficjalnej stronie GOV.UK do skladania wnioskow UK ETA. Jak rozpoznac oficjalna strone i unikac oszustw.",
+    "Tylko strona GOV.UK to oficjalne zrodlo wniosku UK ETA. Jak rozpoznac falszywe strony i unikac oszustw z dodatkowymi oplatami.",
 };
 
 export default function OfficialGovUK() {

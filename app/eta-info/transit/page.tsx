@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Tranzyt przez Wielka Brytanie - Czy potrzebuje UK ETA?",
+  title: "Tranzyt przez Wielka Brytanie - czy potrzebujesz UK ETA 2026?",
   description:
-    "Czy UK ETA jest wymagana podczas tranzytu przez Wielka Brytanie? Zasady dotyczace przesiadek na lotniskach brytyjskich.",
+    "Czy UK ETA jest wymagana podczas tranzytu przez Wielka Brytanie? Zasady dotyczace przesiadek i wyjatki dla strefy tranzytowej lotnisk.",
 };
 
 export default function Transit() {

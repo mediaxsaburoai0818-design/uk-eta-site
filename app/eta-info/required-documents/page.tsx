@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Wymagane dokumenty do wniosku UK ETA",
+  title: "Wymagane dokumenty do UK ETA 2026 - paszport, zdjecie, wymagania",
   description:
-    "Lista wymaganych dokumentow do zlozenia wniosku UK ETA. Paszport biometryczny, zdjecie, dane osobowe.",
+    "Dokumenty wymagane do wniosku UK ETA: paszport biometryczny, zdjecie cyfrowe, dane karty platniczej. Pelna lista i wymagania techniczne.",
 };
 
 export default function RequiredDocuments() {

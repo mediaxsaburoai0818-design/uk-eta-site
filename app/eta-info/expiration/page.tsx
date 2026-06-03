@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Okres waznosci UK ETA - Kiedy odnowic?",
+  title: "Waznosc UK ETA 2026 - 2 lata i wielokrotne wjazdy",
   description:
-    "UK ETA jest wazna przez 2 lata od zatwierdzenia. Dowiedz sie, kiedy nalezy odnowic autoryzacje i jakie zmiany powoduja jej uniewaznienie.",
+    "UK ETA jest wazna 2 lata od zatwierdzenia. Mozliwe wielokrotne wjazdy do Wielkiej Brytanii. Sprawdz, kiedy nalezy odnowic autoryzacje.",
 };
 
 export default function Expiration() {

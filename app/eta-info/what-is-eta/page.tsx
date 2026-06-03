@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Czym jest UK ETA? - Kompletny przewodnik",
+  title: "Czym jest UK ETA? Kompletny przewodnik 2026",
   description:
-    "UK ETA (Electronic Travel Authorisation) - elektroniczna autoryzacja podrozy do Wielkiej Brytanii. Kraje objete wymogiem, warunki, roznice z wiza.",
+    "UK ETA (Electronic Travel Authorisation) to elektroniczna autoryzacja podrozy obowiazujaca od 2 kwietnia 2025. Procedura, oplata £20, waznosc 2 lata, decyzja zwykle w ciagu 3 dni.",
 };
 
 export default function WhatIsEta() {

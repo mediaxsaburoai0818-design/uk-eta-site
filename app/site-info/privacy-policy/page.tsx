@@ -4,7 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Polityka prywatnosci",
-  description: "Polityka prywatnosci serwisu UK ETA Online. Informacje o przetwarzaniu danych osobowych.",
+  description:
+    "Polityka prywatnosci serwisu UK ETA Online - informacje o przetwarzaniu danych osobowych zgodnie z RODO.",
 };
 
 export default function PrivacyPolicy() {

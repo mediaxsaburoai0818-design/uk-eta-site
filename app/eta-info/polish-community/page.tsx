@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Polacy w Wielkiej Brytanii - Spolecznosc polska w UK",
+  title: "Polacy w Wielkiej Brytanii - 700 tys. osob i status settled",
   description:
-    "Informacje o spolecznosci polskiej w Wielkiej Brytanii. Okolo 700 000 Polakow mieszka w UK. Przydatne zasoby i organizacje.",
+    "Okolo 700 000 Polakow mieszka w Wielkiej Brytanii. Informacje o spolecznosci, statusie settled i kwestiach zwiazanych z UK ETA.",
 };
 
 export default function PolishCommunity() {

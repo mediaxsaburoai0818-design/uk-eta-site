@@ -3,8 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "O nas - UK ETA Online",
-  description: "Informacje o serwisie UK ETA Online. Kim jestesmy i jaki jest cel naszej strony.",
+  title: "O nas",
+  description:
+    "O UK ETA Online - cel serwisu, kim jestesmy i jakie informacje dostarczamy o UK ETA 2026.",
 };
 
 export default function About() {

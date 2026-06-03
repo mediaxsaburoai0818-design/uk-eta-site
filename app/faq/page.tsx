@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "FAQ - Najczesciej zadawane pytania o UK ETA",
+  title: "FAQ UK ETA 2026 - czesto zadawane pytania o wniosek i oplaty",
   description:
-    "Odpowiedzi na najczesciej zadawane pytania dotyczace UK ETA: procedura, koszty, waznosc, odrzucenie wniosku i wiele wiecej.",
+    "Odpowiedzi na najczesciej zadawane pytania o UK ETA 2026: procedura, oplata £20, waznosc 2 lata, odrzucenie wniosku i wyjatki.",
 };
 
 const faqs = [

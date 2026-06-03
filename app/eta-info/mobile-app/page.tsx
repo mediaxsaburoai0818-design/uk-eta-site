@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Aplikacja mobilna UK ETA",
+  title: "Oficjalna aplikacja mobilna UK ETA 2026 - iOS i Android",
   description:
-    "Jak korzystac z oficjalnej aplikacji UK ETA do skladania wnioskow na smartfonie. Dostepna na iOS i Android.",
+    "Oficjalna aplikacja mobilna UK ETA na iOS i Android - jak pobrac i zlozyc wniosek bezposrednio z telefonu krok po kroku.",
 };
 
 export default function MobileApp() {

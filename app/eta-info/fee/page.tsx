@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Oplaty za UK ETA - Ile kosztuje wniosek?",
+  title: "Oplata UK ETA 2026 £20 - wzrost z £16 i sposoby platnosci",
   description:
-    "Oplata za UK ETA wynosi 10 funtow. Szczegoly dotyczace kosztow, metod platnosci i ostrzezen przed falszywymi stronami.",
+    "Aktualna oplata UK ETA 2026 wynosi £20 (wzrost z £16 od 9 kwietnia 2025). Jednorazowa platnosc, waznosc 2 lata, bez ukrytych kosztow.",
 };
 
 export default function Fee() {

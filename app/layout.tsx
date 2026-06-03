@@ -20,18 +20,18 @@ const notoSerif = Noto_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: "UK ETA Online - Elektroniczna Autoryzacja Podrozy do Wielkiej Brytanii",
-    template: "%s | UK ETA Online",
+    default: "UK ETA Online 2026 | Polskojezyczny przewodnik krok po kroku",
+    template: "%s ‐ UK ETA Online",
   },
   description:
-    "Kompletny przewodnik po UK ETA (Electronic Travel Authorisation) do Wielkiej Brytanii. Procedura skladania wniosku, oplaty, FAQ i wiecej.",
+    "Polskojezyczny kompletny przewodnik UK ETA 2026. Przy podrozy do Wielkiej Brytanii obowiazek od 2 kwietnia 2025 — wniosek nalezy zlozyc 3 dni przed wyjazdem. Pamietaj, aby zlozyc wniosek w terminie.",
   keywords:
-    "UK ETA, Wielka Brytania, autoryzacja podrozy, Electronic Travel Authorisation, wniosek ETA, Polska, podrozowanie do Anglii, GOV.UK",
+    "UK ETA, UK ETA 2026, Wielka Brytania, autoryzacja podrozy, Electronic Travel Authorisation, wniosek ETA, Polska, oplata £20",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "UK ETA Online - Elektroniczna Autoryzacja Podrozy do Wielkiej Brytanii",
+    title: "UK ETA Online 2026 | Polskojezyczny przewodnik krok po kroku",
     description:
-      "Kompletny przewodnik po systemie UK ETA. Informacje, procedura, koszty i FAQ.",
+      "Polskojezyczny kompletny przewodnik UK ETA 2026. Przy podrozy do Wielkiej Brytanii obowiazek od 2 kwietnia 2025 — wniosek nalezy zlozyc 3 dni przed wyjazdem. Pamietaj, aby zlozyc wniosek w terminie.",
     locale: "pl_PL",
     type: "website",
   },

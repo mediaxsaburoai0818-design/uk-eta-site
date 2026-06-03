@@ -4,7 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Mapa strony",
-  description: "Pelna lista wszystkich stron na UK ETA Online.",
+  description:
+    "Pelna lista wszystkich stron na UK ETA Online - przegladaj zawartosc serwisu.",
 };
 
 const sections = [
