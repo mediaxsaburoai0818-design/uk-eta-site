@@ -116,9 +116,9 @@ export default function Application() {
       {/* Section 6 */}
       <section className="bg-white">
         <div className="max-w-4xl mx-auto px-6 py-10">
-          <h2 className="heading-band mb-6">Krok 5: Dokonaj platnosci (&pound;10)</h2>
+          <h2 className="heading-band mb-6">Krok 5: Dokonaj platnosci (&pound;20)</h2>
           <p className="text-gray-600 leading-relaxed">
-            Zaplac &pound;10 karta kredytowa, debetowa lub przez Apple Pay /
+            Zaplac &pound;20 karta kredytowa, debetowa lub przez Apple Pay /
             Google Pay. Platnosc jest przetwarzana natychmiast.
           </p>
         </div>

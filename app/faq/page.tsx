@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Ile kosztuje wniosek UK ETA?",
-    a: "Oplata za UK ETA wynosi \u00a310 (okolo 50 PLN). Oplata jest pobierana w momencie skladania wniosku i nie podlega zwrotowi. Uwazaj na falszywe strony, ktore pobieraja \u00a350-150 za te sama usluge.",
+    a: "Oplata za UK ETA wynosi \u00a320 (okolo 100 PLN). Oplata jest pobierana w momencie skladania wniosku i nie podlega zwrotowi. Uwazaj na falszywe strony, ktore pobieraja \u00a350-150 za te sama usluge.",
   },
   {
     q: "Jak dlugo trwa rozpatrzenie wniosku UK ETA?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Jaka jest roznica miedzy UK ETA a wiza?",
-    a: "UK ETA to uproszczona autoryzacja elektroniczna do krotkich pobytow (do 6 miesiecy). Koszt: \u00a310, wniosek online. Wiza brytyjska wymaga wizyty w centrum wizowym, kosztuje od \u00a3100 i pozwala na dluzsze pobyty lub prace.",
+    a: "UK ETA to uproszczona autoryzacja elektroniczna do krotkich pobytow (do 6 miesiecy). Koszt: \u00a320, wniosek online. Wiza brytyjska wymaga wizyty w centrum wizowym, kosztuje od \u00a3100 i pozwala na dluzsze pobyty lub prace.",
   },
   {
     q: "Czy Polska jest objeta wymogiem UK ETA?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Co sie stanie, jesli moj wniosek UK ETA zostanie odrzucony?",
-    a: "W przypadku odrzucenia wniosku UK ETA otrzymasz e-mail z informacja o przyczynach odmowy. Mozesz zlozyc odwolanie (administrative review) lub ubiegac sie o wize turystyczna Standard Visitor visa. Oplata \u00a310 nie podlega zwrotowi.",
+    a: "W przypadku odrzucenia wniosku UK ETA otrzymasz e-mail z informacja o przyczynach odmowy. Mozesz zlozyc odwolanie (administrative review) lub ubiegac sie o wize turystyczna Standard Visitor visa. Oplata \u00a320 nie podlega zwrotowi.",
   },
   {
     q: "Czy potrzebuje UK ETA na tranzyt przez Wielka Brytanie?",

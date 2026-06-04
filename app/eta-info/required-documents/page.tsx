@@ -67,7 +67,7 @@ export default function RequiredDocuments() {
               <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
                 <li>Karta kredytowa lub debetowa (Visa/Mastercard)</li>
                 <li>Apple Pay lub Google Pay</li>
-                <li>Oplata: &pound;10</li>
+                <li>Oplata: &pound;20</li>
               </ul>
             </div>
           </div>

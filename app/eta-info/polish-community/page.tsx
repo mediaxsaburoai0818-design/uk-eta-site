@@ -117,7 +117,7 @@ export default function PolishCommunity() {
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
             <li>Zloz wniosek UK ETA co najmniej 72 godziny przed wyjazdem</li>
-            <li>Oplata wynosi &pound;10</li>
+            <li>Oplata wynosi &pound;20</li>
             <li>Mozesz przebywac w UK do 6 miesiecy na jeden wjazd</li>
             <li>ETA jest wazna przez 2 lata &mdash; wielokrotne wjazdy</li>
             <li>Nie mozesz pracowac na podstawie ETA</li>

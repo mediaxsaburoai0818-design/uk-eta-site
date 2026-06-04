@@ -98,7 +98,7 @@ export default function WhatIsEta() {
             <li>Cel podrozy: turystyka, biznes, studia krotkoterminowe lub tranzyt</li>
             <li>Maksymalny pobyt: 6 miesiecy na kazdy wjazd</li>
             <li>Waznosc: 2 lata od daty wydania</li>
-            <li>Oplata: &pound;10</li>
+            <li>Oplata: &pound;20</li>
             <li>Wielokrotne wjazdy w okresie waznosci</li>
             <li>Wymagany paszport biometryczny</li>
           </ul>
@@ -121,7 +121,7 @@ export default function WhatIsEta() {
               <tbody>
                 <tr>
                   <td className="p-3 border-b border-gray-100">Koszt</td>
-                  <td className="p-3 border-b border-gray-100">&pound;10</td>
+                  <td className="p-3 border-b border-gray-100">&pound;20</td>
                   <td className="p-3 border-b border-gray-100">od &pound;100</td>
                 </tr>
                 <tr>

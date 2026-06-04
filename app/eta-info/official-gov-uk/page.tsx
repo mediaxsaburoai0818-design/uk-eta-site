@@ -58,7 +58,7 @@ export default function OfficialGovUK() {
           <ul className="list-disc list-inside space-y-2 text-gray-600">
             <li>Adres URL zawiera <strong>gov.uk</strong> (domena rzadowa UK)</li>
             <li>Strona jest obslugiwana przez Home Office</li>
-            <li>Oplata wynosi dokladnie &pound;10</li>
+            <li>Oplata wynosi dokladnie &pound;20</li>
             <li>Strona ma charakterystyczny bialo-czarny design GOV.UK</li>
             <li>Nie wymaga oplaty za &quot;przyspieszenie&quot; rozpatrywania</li>
           </ul>
@@ -72,7 +72,7 @@ export default function OfficialGovUK() {
             <p className="font-bold mb-2">Znaki ostrzegawcze:</p>
             <ul className="list-disc list-inside space-y-1">
               <li>Adres URL nie zawiera gov.uk</li>
-              <li>Oplata znacznie wyzsza niz &pound;10</li>
+              <li>Oplata znacznie wyzsza niz &pound;20</li>
               <li>Obietnica &quot;gwarantowanego zatwierdzenia&quot;</li>
               <li>Oferta &quot;przyspieszonego rozpatrywania&quot;</li>
               <li>Agresywna reklama lub natretne pop-upy</li>

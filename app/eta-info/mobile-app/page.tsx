@@ -87,7 +87,7 @@ export default function MobileApp() {
             <li>Zeskanuj paszport biometryczny (przyloz telefon do paszportu)</li>
             <li>Zrob zdjecie twarzy (selfie)</li>
             <li>Odpowiedz na pytania w formularzu</li>
-            <li>Dokonaj platnosci &pound;10</li>
+            <li>Dokonaj platnosci &pound;20</li>
             <li>Wyslij wniosek i oczekuj na decyzje</li>
           </ol>
         </div>

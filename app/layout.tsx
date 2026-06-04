@@ -3,6 +3,7 @@ import { Noto_Sans, Noto_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Reveal from "@/components/Reveal";
 
 const notoSans = Noto_Sans({
   subsets: ["latin", "latin-ext"],
@@ -58,6 +59,7 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <Reveal />
       </body>
     </html>
   );

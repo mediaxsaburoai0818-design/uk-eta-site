@@ -92,7 +92,7 @@ export default function Expiration() {
           <p className="text-gray-600 leading-relaxed mb-4">
             ETA jest powiazana z konkretnym paszportem. Jesli uzyskasz nowy
             paszport (np. po wygasnieciu starego, zmianie nazwiska), musisz
-            zlozyc nowy wniosek ETA i uiscic ponownie oplate &pound;10. Stara
+            zlozyc nowy wniosek ETA i uiscic ponownie oplate &pound;20. Stara
             ETA przestaje byc wazna.
           </p>
           <div className="bg-white border-l-4 border-[#022444] p-4 rounded-r text-sm text-gray-700">
