@@ -22,6 +22,7 @@
   --color-border: #e2e6ea;
   --color-bg-soft: #f5f8fb;       /* soft section background */
   --color-red-vivid: #d92020;     /* vivid CTA red */
+  --font-display: var(--font-fraunces), Georgia, 'Times New Roman', serif; /* premium display serif */
 }
 
 body {
@@ -31,8 +32,29 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-noto-serif), 'Noto Serif', serif;
+  font-family: var(--font-display);
   color: var(--color-navy);
+  letter-spacing: 0.01em;
+}
+
+/* Kicker label (small uppercase label above section headings) */
+.kicker {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-red-vivid);
+  margin-bottom: 0.6rem;
+}
+
+/* Large display number (stat blocks) */
+.stat-num {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.05;
+  color: var(--color-blue);
 }
 
 html {

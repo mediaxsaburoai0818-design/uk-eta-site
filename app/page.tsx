@@ -69,7 +69,7 @@ export default function Home() {
             </p>
             <h1
               className="text-3xl sm:text-4xl md:text-6xl font-bold mb-5 leading-[1.12] drop-shadow"
-              style={{ fontFamily: "var(--font-noto-serif), serif", color: "white" }}
+              style={{ fontFamily: "var(--font-display)", color: "white" }}
             >
               Elektroniczna Autoryzacja
               <br />
@@ -105,7 +105,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {facts.map((f, i) => (
               <div key={f.label} className={`reveal reveal-delay-${i + 1}`}>
-                <p className="text-3xl md:text-4xl font-bold" style={{ color: "var(--color-blue)", fontFamily: "var(--font-noto-serif), serif" }}>
+                <p className="text-3xl md:text-4xl font-bold" style={{ color: "var(--color-blue)", fontFamily: "var(--font-display)" }}>
                   {f.value}
                 </p>
                 <p className="text-sm text-[color:var(--color-text-light)] mt-2">{f.label}</p>
@@ -118,6 +118,7 @@ export default function Home() {
       {/* === UK ETA overview === */}
       <section className="py-16 bg-[var(--color-bg-soft)]">
         <div className="max-w-3xl mx-auto px-6 reveal">
+          <span className="kicker">O systemie ETA</span>
           <h2 className="heading-rule text-2xl md:text-3xl">Czym jest UK ETA?</h2>
           <p className="text-[color:var(--color-text-light)] mb-4 leading-relaxed">
             UK ETA (Electronic Travel Authorisation) to elektroniczna autoryzacja podrozy
@@ -135,6 +136,7 @@ export default function Home() {
       {/* === Application steps === */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-6">
+          <span className="kicker reveal">Procedura</span>
           <h2 className="heading-rule text-2xl md:text-3xl reveal">Jak zlozyc wniosek UK ETA?</h2>
           <div className="mt-8 grid gap-5">
             {steps.map((s, i) => (
@@ -165,6 +167,7 @@ export default function Home() {
       {/* === FAQ preview === */}
       <section className="py-16 bg-[var(--color-bg-soft)]">
         <div className="max-w-3xl mx-auto px-6">
+          <span className="kicker reveal">FAQ</span>
           <h2 className="heading-rule text-2xl md:text-3xl reveal">Najczesciej zadawane pytania</h2>
           <div className="mt-6 space-y-4">
             {faqs.map((f, i) => (
@@ -188,6 +191,7 @@ export default function Home() {
       {/* === Related pages === */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
+          <span className="kicker reveal">Przewodnik</span>
           <h2 className="heading-rule text-2xl md:text-3xl reveal">Przydatne strony</h2>
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {links.map((item, i) => (
@@ -208,7 +212,8 @@ export default function Home() {
       {/* === CTA === */}
       <section className="py-16 text-white text-center" style={{ background: "var(--color-blue)" }}>
         <div className="max-w-3xl mx-auto px-6 reveal">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-noto-serif), serif", color: "white" }}>
+          <span className="kicker" style={{ color: "rgba(255,255,255,0.8)" }}>Gotowy do startu?</span>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-display)", color: "white" }}>
             Zacznij procedure skladania wniosku UK ETA
           </h2>
           <p className="mb-8 text-white/90">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Noto_Serif } from "next/font/google";
+import { Noto_Sans, Noto_Serif, Fraunces } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -16,6 +16,14 @@ const notoSerif = Noto_Serif({
   subsets: ["latin", "latin-ext"],
   variable: "--font-noto-serif",
   weight: ["400", "700"],
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -54,7 +62,7 @@ export default function RootLayout({
         <meta httpEquiv="Expires" content="0" />
       </head>
       <body
-        className={`${notoSans.variable} ${notoSerif.variable} antialiased`}
+        className={`${notoSans.variable} ${notoSerif.variable} ${fraunces.variable} antialiased`}
       >
         <Header />
         <main className="min-h-screen">{children}</main>
