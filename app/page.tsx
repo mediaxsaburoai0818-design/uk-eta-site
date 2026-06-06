@@ -108,10 +108,8 @@ export default function Home() {
 
       {/* === Hero === */}
       <section className="relative text-white min-h-[460px] md:min-h-[640px] flex items-center overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/hero-uk.jpg" alt="" className="absolute inset-0 w-full h-full object-cover hero-zoom" />
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/hero-uk.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 hero-scrim" />
         <div className="relative max-w-5xl mx-auto px-6 py-20 md:py-28 w-full">
           <div className="max-w-2xl reveal">
@@ -230,12 +228,21 @@ export default function Home() {
               </div>
             </div>
             <div className="map-panel reveal reveal-delay-1">
-              <svg className="map-uk" viewBox="0 0 200 260" role="img" aria-label="Mapa Wielkiej Brytanii">
-                <path className="land" d="M96 14l8 10-3 9 9 6-4 8 7 5-6 7 9 9-8 6 5 10-10 4 4 9-9 3 6 8-11 2 3 9-10 1 5 9-12 0 2 10-11-2 0 10-9-4-2 9-8-6-3 8-7-8-5 7-4-10-8 4-1-10-9 2 2-10-9-1 5-9-10-3 7-8-8-5 9-6-6-8 10-4-4-9 11-3-3-9 12-2-2-9 11 1 0-10 10 3 1-10 9 4 2-9 8 5 1-10 7 6 3-9z" />
-                <circle className="pin" cx="92" cy="120" r="6" />
-                <circle cx="92" cy="120" r="11" fill="none" stroke="#d92020" strokeWidth="2" opacity="0.5" />
-              </svg>
-              <p className="text-center mt-4 text-sm font-semibold" style={{ color: "var(--color-blue)" }}>Zjednoczone Krolestwo</p>
+              <div className="flag-frame">
+                <svg viewBox="0 0 60 30" role="img" aria-label="Flaga Wielkiej Brytanii" style={{ width: "100%", height: "auto", display: "block" }}>
+                  <clipPath id="ukflag"><rect width="60" height="30" rx="2" /></clipPath>
+                  <g clipPath="url(#ukflag)">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
+                    <path d="M0,0 L60,30" stroke="#C8102E" strokeWidth="2.4" clipPath="url(#ukflag)" />
+                    <path d="M60,0 L0,30" stroke="#C8102E" strokeWidth="2.4" />
+                    <path d="M30,0 V30 M0,15 H60" stroke="#fff" strokeWidth="10" />
+                    <path d="M30,0 V30 M0,15 H60" stroke="#C8102E" strokeWidth="6" />
+                  </g>
+                </svg>
+              </div>
+              <p className="text-center mt-5 text-base font-semibold" style={{ color: "var(--color-blue)", fontFamily: "var(--font-display)" }}>Zjednoczone Krolestwo</p>
+              <p className="text-center mt-1 text-xs" style={{ color: "var(--color-text-light)" }}>Anglia &middot; Szkocja &middot; Walia &middot; Irlandia Polnocna</p>
             </div>
           </div>
         </div>
