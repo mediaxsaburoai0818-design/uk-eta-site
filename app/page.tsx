@@ -123,7 +123,7 @@ export default function Home() {
             <p className="text-base md:text-xl mb-8 leading-relaxed drop-shadow text-white/95 max-w-xl">
               Od 2 kwietnia 2025 roku obywatele UE potrzebuja UK ETA. Wniosek skladasz online, a rozpatrzenie trwa do 72 godzin.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 mb-10">
+            <div className="flex flex-col sm:flex-row gap-3 mb-10 items-start">
               <a href={GOV} target="_blank" rel="noopener noreferrer" className="btn-red text-base">
                 Zloz wniosek UK ETA
               </a>

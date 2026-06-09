@@ -21,7 +21,7 @@ export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-[var(--color-border)]">
+    <header className="sticky top-0 z-50 border-b border-white/10" style={{ backgroundColor: "var(--color-navy)" }}>
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 no-underline">
@@ -38,12 +38,12 @@ export default function Header() {
                 className="block text-[16px] lg:text-[19px] font-bold tracking-tight"
                 style={{
                   fontFamily: "var(--font-noto-serif), serif",
-                  color: "var(--color-blue)",
+                  color: "#ffffff",
                 }}
               >
                 UK ETA Online
               </span>
-              <span className="block text-[10px] lg:text-[11px] tracking-wide text-[color:var(--color-text-light)]">
+              <span className="block text-[10px] lg:text-[11px] tracking-wide text-white/70">
                 Autoryzacja podrozy do Wielkiej Brytanii
               </span>
             </div>
@@ -56,8 +56,8 @@ export default function Header() {
               onMouseLeave={() => setDropdownOpen(false)}
             >
               <button
-                className="px-3 py-2 text-sm font-medium hover:text-[var(--color-blue-mid)] transition bg-transparent border-0 cursor-pointer"
-                style={{ color: "var(--color-blue)" }}
+                className="px-3 py-2 text-sm font-medium hover:text-white/75 transition bg-transparent border-0 cursor-pointer"
+                style={{ color: "#ffffff" }}
               >
                 Informacje o UK ETA
               </button>
@@ -78,15 +78,15 @@ export default function Header() {
             </div>
             <Link
               href="/faq/"
-              className="px-3 py-2 text-sm font-medium hover:text-[var(--color-blue-mid)] transition no-underline"
-              style={{ color: "var(--color-blue)" }}
+              className="px-3 py-2 text-sm font-medium hover:text-white/75 transition no-underline"
+              style={{ color: "#ffffff" }}
             >
               FAQ
             </Link>
             <Link
               href="/site-info/contact/"
-              className="px-3 py-2 text-sm font-medium hover:text-[var(--color-blue-mid)] transition no-underline"
-              style={{ color: "var(--color-blue)" }}
+              className="px-3 py-2 text-sm font-medium hover:text-white/75 transition no-underline"
+              style={{ color: "#ffffff" }}
             >
               Kontakt
             </Link>
@@ -107,21 +107,21 @@ export default function Header() {
           >
             {mobileMenuOpen ? (
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <path d="M6 18L18 6M6 6l12 12" stroke="var(--color-blue)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M6 18L18 6M6 6l12 12" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             ) : (
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <path d="M4 6h16" stroke="var(--color-blue)" strokeWidth="2.5" strokeLinecap="round" />
-                <path d="M4 12h16" stroke="var(--color-blue)" strokeWidth="2.5" strokeLinecap="round" />
-                <path d="M4 18h16" stroke="var(--color-blue)" strokeWidth="2.5" strokeLinecap="round" />
+                <path d="M4 6h16" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+                <path d="M4 12h16" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+                <path d="M4 18h16" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
               </svg>
             )}
           </button>
         </div>
 
         {mobileMenuOpen && (
-          <nav className="lg:hidden mt-3 pb-3 border-t border-[var(--color-border)] pt-3 space-y-1">
-            <p className="px-3 py-1 text-xs uppercase tracking-wider font-bold" style={{ color: "var(--color-blue)" }}>
+          <nav className="lg:hidden mt-3 bg-white rounded-md p-3 space-y-1">
+            <p className="px-3 py-1 text-xs uppercase tracking-wider font-bold" style={{ color: "var(--color-navy)" }}>
               Informacje o UK ETA
             </p>
             {subnav.map((c) => (

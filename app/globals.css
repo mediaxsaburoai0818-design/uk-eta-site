@@ -237,8 +237,8 @@ html {
 @keyframes heroZoom { from { transform: scale(1.10); } to { transform: scale(1); } }
 .hero-scrim {
   background:
-    linear-gradient(100deg, rgba(1,18,38,0.86) 0%, rgba(2,36,68,0.62) 42%, rgba(2,36,68,0.20) 72%, rgba(2,36,68,0.05) 100%),
-    linear-gradient(0deg, rgba(1,18,38,0.65) 0%, rgba(1,18,38,0) 45%);
+    linear-gradient(100deg, rgba(1,18,38,0.92) 0%, rgba(2,36,68,0.80) 45%, rgba(2,36,68,0.45) 72%, rgba(2,36,68,0.22) 100%),
+    linear-gradient(0deg, rgba(1,18,38,0.70) 0%, rgba(1,18,38,0) 50%);
 }
 
 /* Decorative line above headings (オシャレな線) */
