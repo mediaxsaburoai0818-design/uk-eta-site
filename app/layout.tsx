@@ -1,29 +1,31 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Noto_Serif, Fraunces } from "next/font/google";
+import { Work_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import StickyCta from "@/components/StickyCta";
 
-const notoSans = Noto_Sans({
+// Font option 2 — Playfair Display (display/headings) × Work Sans (body).
+// Variable names kept identical so existing globals.css/components need no change.
+const notoSans = Work_Sans({
   subsets: ["latin", "latin-ext"],
   variable: "--font-noto-sans",
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const notoSerif = Noto_Serif({
+const notoSerif = Playfair_Display({
   subsets: ["latin", "latin-ext"],
   variable: "--font-noto-serif",
-  weight: ["400", "700"],
+  weight: ["500", "600", "700"],
   display: "swap",
 });
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
+const fraunces = Playfair_Display({
+  subsets: ["latin", "latin-ext"],
   variable: "--font-fraunces",
-  weight: ["400", "500", "600"],
+  weight: ["500", "600", "700", "800"],
   style: ["normal", "italic"],
   display: "swap",
 });

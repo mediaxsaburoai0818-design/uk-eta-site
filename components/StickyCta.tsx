@@ -22,23 +22,24 @@ export default function StickyCta() {
   }, []);
 
   return (
-    <a
-      href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`cta-sticky-bar ${show ? "is-visible" : ""}`}
-      aria-hidden={!show}
-      tabIndex={show ? 0 : -1}
-    >
-      <span className="cta-sticky-main">
-        <span className="cta-sticky-title">Rozpocznij wniosek UK ETA</span>
-        <span className="cta-sticky-sub">
-          Zloz wniosek najpozniej 72 godziny przed wyjazdem
+    <div className={`cta-sticky-bar ${show ? "is-visible" : ""}`} aria-hidden={!show}>
+      <div className="cta-sticky-inner">
+        <span className="cta-sticky-text">
+          <span className="cta-sticky-title">Wybierasz sie do Wielkiej Brytanii?</span>
+          <span className="cta-sticky-sub">
+            Zloz wniosek najpozniej 72 godziny przed wyjazdem
+          </span>
         </span>
-      </span>
-      <span className="cta-sticky-go" aria-hidden>
-        &rarr;
-      </span>
-    </a>
+        <a
+          href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-sticky-btn"
+          tabIndex={show ? 0 : -1}
+        >
+          Rozpocznij wniosek UK ETA
+        </a>
+      </div>
+    </div>
   );
 }

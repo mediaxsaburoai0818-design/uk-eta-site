@@ -321,26 +321,37 @@ html {
   box-shadow: 0 14px 30px -12px rgba(2,36,68,0.45);
   border: 4px solid #fff;
 }
-/* Sticky bottom CTA (追跡型) — slides up after the hero, hides near the footer */
+/* Sticky bottom CTA (追跡型) — dim translucent bar with a red button inside */
 .cta-sticky-bar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
-  display: flex; align-items: center; justify-content: center; gap: 1rem;
-  background: var(--color-red-vivid); color: #ffffff !important; text-decoration: none;
-  padding: 0.8rem 1.25rem;
-  box-shadow: 0 -8px 24px -10px rgba(0,0,0,0.4);
-  transform: translateY(110%); transition: transform 0.35s ease; will-change: transform;
+  background: rgba(2, 24, 47, 0.92);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 -8px 28px -12px rgba(0, 0, 0, 0.55);
+  padding: 0.7rem 1.1rem;
+  transform: translateY(115%); transition: transform 0.35s ease; will-change: transform;
 }
 .cta-sticky-bar.is-visible { transform: translateY(0); }
-.cta-sticky-bar:hover { background: #c41a1a; }
-.cta-sticky-main { display: flex; flex-direction: column; line-height: 1.2; text-align: center; }
-.cta-sticky-title { font-weight: 700; font-size: 0.98rem; letter-spacing: 0.01em; }
-.cta-sticky-sub { font-size: 0.72rem; opacity: 0.92; }
-.cta-sticky-go {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 32px; height: 32px; border-radius: 9999px; background: rgba(255,255,255,0.2);
-  font-weight: 700; font-size: 1.05rem; flex-shrink: 0;
+.cta-sticky-inner {
+  max-width: 64rem; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
 }
-@media (max-width: 480px) { .cta-sticky-sub { font-size: 0.68rem; } }
+.cta-sticky-text { display: flex; flex-direction: column; line-height: 1.25; color: #fff; min-width: 0; }
+.cta-sticky-title { font-weight: 700; font-size: 0.92rem; letter-spacing: 0.01em; }
+.cta-sticky-sub { font-size: 0.72rem; color: rgba(255, 255, 255, 0.7); }
+.cta-sticky-btn {
+  flex-shrink: 0;
+  background: var(--color-red-vivid); color: #fff !important; font-weight: 700;
+  padding: 0.7rem 1.4rem; border-radius: 0.6rem; text-decoration: none; white-space: nowrap;
+  box-shadow: 0 8px 18px -6px rgba(217, 32, 32, 0.55);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.cta-sticky-btn:hover { background: #b81818; transform: translateY(-1px); }
+@media (max-width: 480px) {
+  .cta-sticky-title { font-size: 0.82rem; }
+  .cta-sticky-sub { font-size: 0.66rem; }
+  .cta-sticky-btn { padding: 0.6rem 1rem; font-size: 0.85rem; }
+}
 @media (prefers-reduced-motion: reduce) { .cta-sticky-bar { transition: none; } }
 
 /* Larger Union Jack (prominent 対象国 centerpiece) */
