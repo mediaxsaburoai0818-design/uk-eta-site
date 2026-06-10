@@ -195,14 +195,17 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
             {[
-              "Wazny paszport (zdjecie lub skan strony ze zdjeciem)",
-              "Zdjecie twarzy (nie jest wymagane dla dzieci w wieku 9 lat i mlodszych)",
-              "Adres e-mail (na ten adres otrzymasz potwierdzenie autoryzacji ETA)",
-              "Karta platnicza do oplaty (Visa, Mastercard, JCB, American Express, Diners Club)",
+              { label: "Wazny paszport", desc: "Zdjecie lub skan strony ze zdjeciem." },
+              { label: "Zdjecie twarzy", desc: "Nie jest wymagane dla dzieci w wieku 9 lat i mlodszych." },
+              { label: "Adres e-mail", desc: "Na ten adres otrzymasz potwierdzenie autoryzacji ETA." },
+              { label: "Karta platnicza", desc: "Visa, Mastercard, JCB, American Express, Diners Club." },
             ].map((item, i) => (
-              <div key={i} className="card flex gap-4 items-center reveal text-left">
-                <p className="flex-1 text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>{item}</p>
+              <div key={i} className="card flex gap-4 items-start reveal text-left">
                 <span className="flex-shrink-0 w-9 h-9 rounded-full inline-flex items-center justify-center font-semibold text-white" style={{ background: "var(--color-blue)", fontFamily: "var(--font-display)" }}>{i + 1}</span>
+                <div>
+                  <h3 className="feature-title !text-base !mb-1">{item.label}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
