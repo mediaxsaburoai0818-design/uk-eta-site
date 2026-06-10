@@ -155,6 +155,28 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* Okres waznosci / wymagania */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-4xl mx-auto text-left">
+            <div className="card reveal">
+              <h3 className="feature-title mb-3">Okres waznosci ETA i termin skladania wniosku</h3>
+              <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--color-text-light)" }}>
+                <strong style={{ color: "var(--color-blue)" }}>Okres waznosci:</strong> ETA jest wazne przez 2 lata od daty wydania i pozwala na wielokrotne wjazdy do Wielkiej Brytanii. Jesli jednak Twoj paszport traci waznosc wczesniej niz za 2 lata, ETA wygasa razem z paszportem — w takim wypadku najpierw odnow paszport, a dopiero potem zloz wniosek o ETA.
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>
+                <strong style={{ color: "var(--color-blue)" }}>Termin skladania:</strong> Decyzje otrzymasz zwykle w ciagu 3 dni roboczych, choc w niektorych przypadkach (np. prosba o dodatkowe dokumenty) moze to potrwac do 30 dni. Wniosek najlepiej zlozyc od razu po zaplanowaniu podrozy. Po zatwierdzeniu otrzymasz e-mail z potwierdzeniem autoryzacji. Przy wjezdzie zwykle nie trzeba okazywac numeru ETA, ale zaleca sie zachowanie potwierdzenia (zrzut ekranu lub wydruk).
+              </p>
+            </div>
+            <div className="card reveal reveal-delay-1">
+              <h3 className="feature-title mb-3">Co jest potrzebne do zlozenia wniosku o ETA</h3>
+              <ul className="text-sm leading-relaxed space-y-2.5" style={{ color: "var(--color-text-light)" }}>
+                <li className="flex gap-2.5"><span className="font-bold" style={{ color: "var(--color-red-vivid)" }}>1.</span><span>Wazny paszport (zdjecie lub skan strony ze zdjeciem)</span></li>
+                <li className="flex gap-2.5"><span className="font-bold" style={{ color: "var(--color-red-vivid)" }}>2.</span><span>Zdjecie twarzy (nie jest wymagane dla dzieci w wieku 9 lat i mlodszych)</span></li>
+                <li className="flex gap-2.5"><span className="font-bold" style={{ color: "var(--color-red-vivid)" }}>3.</span><span>Adres e-mail</span></li>
+                <li className="flex gap-2.5"><span className="font-bold" style={{ color: "var(--color-red-vivid)" }}>4.</span><span>Karta platnicza do oplaty (Visa, Mastercard, JCB, American Express, Diners Club)</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -191,35 +213,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* === Countries / UK map === */}
+      {/* === Countries + who needs ETA / transit === */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center flex flex-col items-center gap-8">
-            <div className="reveal">
-              <p className="kicker">Kto potrzebuje ETA</p>
-              <div className="deco-head center"><span className="deco-line" /></div>
-              <h2 className="sec-title text-3xl md:text-4xl mb-4">Wymagana przy wjezdzie do Wielkiej Brytanii</h2>
-              <p className="sec-lead">
-                UK ETA dotyczy obywateli panstw UE oraz dziesiatek innych krajow, ktorzy wjezdzaja do Anglii, Szkocji, Walii i Irlandii Polnocnej
-                w celach turystycznych, biznesowych lub tranzytowych.
-              </p>
+          <div className="max-w-2xl mx-auto text-center mb-12 reveal">
+            <p className="kicker">Kto potrzebuje ETA</p>
+            <div className="deco-head center"><span className="deco-line" /></div>
+            <h2 className="sec-title text-3xl md:text-4xl mb-4">Wymagana przy wjezdzie do Wielkiej Brytanii</h2>
+            <p className="sec-lead">
+              UK ETA dotyczy obywateli Polski i innych panstw UE oraz dziesiatek innych krajow, ktorzy wjezdzaja do Wielkiej Brytanii
+              w celach turystycznych, biznesowych lub tranzytowych. Autoryzacja pozwala na pobyt do 6 miesiecy.
+            </p>
+          </div>
+
+          {/* Duza flaga = objete kraje */}
+          <div className="max-w-md mx-auto mb-16 reveal reveal-delay-1">
+            <div className="flag-frame-lg">
+              <svg viewBox="0 0 60 30" role="img" aria-label="Flaga Wielkiej Brytanii" style={{ width: "100%", height: "auto", display: "block" }}>
+                <clipPath id="ukflag"><rect width="60" height="30" rx="2" /></clipPath>
+                <g clipPath="url(#ukflag)">
+                  <rect width="60" height="30" fill="#012169" />
+                  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
+                  <path d="M0,0 L60,30" stroke="#C8102E" strokeWidth="2.4" clipPath="url(#ukflag)" />
+                  <path d="M60,0 L0,30" stroke="#C8102E" strokeWidth="2.4" />
+                  <path d="M30,0 V30 M0,15 H60" stroke="#fff" strokeWidth="10" />
+                  <path d="M30,0 V30 M0,15 H60" stroke="#C8102E" strokeWidth="6" />
+                </g>
+              </svg>
             </div>
-            <div className="map-panel reveal reveal-delay-1">
-              <div className="flag-frame">
-                <svg viewBox="0 0 60 30" role="img" aria-label="Flaga Wielkiej Brytanii" style={{ width: "100%", height: "auto", display: "block" }}>
-                  <clipPath id="ukflag"><rect width="60" height="30" rx="2" /></clipPath>
-                  <g clipPath="url(#ukflag)">
-                    <rect width="60" height="30" fill="#012169" />
-                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
-                    <path d="M0,0 L60,30" stroke="#C8102E" strokeWidth="2.4" clipPath="url(#ukflag)" />
-                    <path d="M60,0 L0,30" stroke="#C8102E" strokeWidth="2.4" />
-                    <path d="M30,0 V30 M0,15 H60" stroke="#fff" strokeWidth="10" />
-                    <path d="M30,0 V30 M0,15 H60" stroke="#C8102E" strokeWidth="6" />
-                  </g>
-                </svg>
+            <p className="text-center mt-6 text-xl font-semibold" style={{ color: "var(--color-blue)", fontFamily: "var(--font-display)" }}>Zjednoczone Krolestwo</p>
+            <p className="text-center mt-2 text-sm" style={{ color: "var(--color-text-light)" }}>
+              ETA obejmuje wszystkie czesci kraju: <strong style={{ color: "var(--color-blue)" }}>Anglia &middot; Szkocja &middot; Walia &middot; Irlandia Polnocna</strong>
+            </p>
+          </div>
+
+          {/* Tranzyt */}
+          <div className="max-w-3xl mx-auto reveal reveal-delay-2">
+            <div className="text-center mb-8">
+              <h3 className="sec-title text-2xl md:text-3xl mb-3">Tranzyt przez Wielka Brytanie</h3>
+              <p className="sec-lead">Obowiazek uzyskania ETA przy przesiadce zalezy od rodzaju tranzytu.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              <div className="card">
+                <span className="inline-block text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: "var(--color-blue)" }}>Tranzyt lotniczy (airside)</span>
+                <p className="feature-title !text-lg mb-2">Co do zasady bez ETA</p>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>
+                  Jesli nie przechodzisz brytyjskiej kontroli granicznej i pozostajesz w strefie tranzytowej lotniska, ETA zwykle nie jest wymagane. Jesli jednak opuszczasz strefe tranzytowa (np. nocleg lub przesiadka na innym lotnisku), ETA bedzie potrzebne.
+                </p>
               </div>
-              <p className="text-center mt-5 text-base font-semibold" style={{ color: "var(--color-blue)", fontFamily: "var(--font-display)" }}>Zjednoczone Krolestwo</p>
-              <p className="text-center mt-1 text-xs" style={{ color: "var(--color-text-light)" }}>Anglia &middot; Szkocja &middot; Walia &middot; Irlandia Polnocna</p>
+              <div className="card">
+                <span className="inline-block text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: "var(--color-red-vivid)" }}>Tranzyt ladowy (landside)</span>
+                <p className="feature-title !text-lg mb-2">Co do zasady wymaga ETA</p>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>
+                  Przy przejezdzie przez brytyjska kontrole graniczna — np. Eurostarem (pociag przez kanal La Manche) lub promem — i przejsciu odprawy granicznej, ETA jest co do zasady wymagane.
+                </p>
+              </div>
             </div>
           </div>
         </div>
