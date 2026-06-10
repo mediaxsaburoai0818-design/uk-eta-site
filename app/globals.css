@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --color-navy: #022444;
@@ -237,8 +235,7 @@ html {
 @keyframes heroZoom { from { transform: scale(1.10); } to { transform: scale(1); } }
 .hero-scrim {
   background:
-    linear-gradient(100deg, rgba(1,18,38,0.92) 0%, rgba(2,36,68,0.80) 45%, rgba(2,36,68,0.45) 72%, rgba(2,36,68,0.22) 100%),
-    linear-gradient(0deg, rgba(1,18,38,0.70) 0%, rgba(1,18,38,0) 50%);
+    linear-gradient(180deg, rgba(1,18,38,0.66) 0%, rgba(1,18,38,0.46) 40%, rgba(1,18,38,0.72) 100%);
 }
 
 /* Decorative line above headings (オシャレな線) */

@@ -96,23 +96,13 @@ function Icon({ name }: { name: string }) {
 export default function Home() {
   return (
     <div>
-      {/* === Sticky conversion CTA === */}
-      <div className="cta-sticky">
-        <div className="max-w-5xl mx-auto px-4 py-2 flex items-center justify-between gap-3">
-          <span className="text-sm font-medium text-white/95">UK ETA wymagana od 2 kwietnia 2025</span>
-          <a href={GOV} target="_blank" rel="noopener noreferrer" className="cta-sticky-btn text-sm whitespace-nowrap">
-            Zloz wniosek
-          </a>
-        </div>
-      </div>
-
       {/* === Hero === */}
       <section className="relative text-white min-h-[460px] md:min-h-[640px] flex items-center overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/hero-uk.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 hero-scrim" />
         <div className="relative max-w-5xl mx-auto px-6 py-20 md:py-28 w-full">
-          <div className="max-w-2xl reveal">
+          <div className="max-w-3xl mx-auto text-center reveal">
             <p className="kicker" style={{ color: "rgba(255,255,255,0.85)" }}>UK Travel Authorisation</p>
             <h1
               className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-5 leading-[1.1] drop-shadow"
@@ -120,10 +110,10 @@ export default function Home() {
             >
               Elektroniczna Autoryzacja Podrozy do Wielkiej Brytanii
             </h1>
-            <p className="text-base md:text-xl mb-8 leading-relaxed drop-shadow text-white/95 max-w-xl">
+            <p className="text-base md:text-xl mb-8 leading-relaxed drop-shadow text-white/95 max-w-2xl mx-auto">
               Od 2 kwietnia 2025 roku obywatele UE potrzebuja UK ETA. Wniosek skladasz online, a rozpatrzenie trwa do 72 godzin.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 mb-10 items-start">
+            <div className="flex flex-col sm:flex-row gap-3 mb-10 justify-center items-center">
               <a href={GOV} target="_blank" rel="noopener noreferrer" className="btn-red text-base">
                 Zloz wniosek UK ETA
               </a>
@@ -131,11 +121,11 @@ export default function Home() {
                 Dowiedz sie wiecej
               </Link>
             </div>
-            <div className="flex flex-wrap gap-x-10 gap-y-4 pt-6 border-t border-white/20">
+            <div className="flex flex-wrap justify-center gap-x-8 sm:gap-x-12 gap-y-4 pt-6 border-t border-white/25 max-w-xl mx-auto">
               {facts.slice(0, 3).map((f) => (
-                <div key={f.label}>
-                  <p className="text-2xl md:text-3xl font-semibold" style={{ fontFamily: "var(--font-display)", color: "white" }}>{f.value}</p>
-                  <p className="text-xs text-white/75 mt-1">{f.label}</p>
+                <div key={f.label} className="text-center">
+                  <p className="text-2xl md:text-3xl font-semibold drop-shadow" style={{ fontFamily: "var(--font-display)", color: "white" }}>{f.value}</p>
+                  <p className="text-xs text-white/80 mt-1">{f.label}</p>
                 </div>
               ))}
             </div>
@@ -143,26 +133,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* === Key facts (big numbers) === */}
-      <section className="py-14 md:py-16" style={{ background: "var(--color-bg-soft)" }}>
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {facts.map((f, i) => (
-              <div key={f.label} className={`stat-card card reveal reveal-delay-${i + 1}`}>
-                <p className="stat-num">{f.value}</p>
-                <p className="stat-label">{f.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* === What is UK ETA — feature cards === */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="max-w-2xl mb-12 reveal">
+          <div className="max-w-2xl mx-auto text-center mb-12 reveal">
             <p className="kicker">O systemie ETA</p>
-            <div className="deco-head"><span className="deco-line" /></div>
+            <div className="deco-head center"><span className="deco-line" /></div>
             <h2 className="sec-title text-3xl md:text-4xl mb-4">Czym jest UK ETA?</h2>
             <p className="sec-lead">
               UK ETA (Electronic Travel Authorisation) to elektroniczna autoryzacja podrozy wprowadzona przez rzad Wielkiej Brytanii.
@@ -184,23 +161,29 @@ export default function Home() {
       {/* === Application steps === */}
       <section className="py-16 md:py-20" style={{ background: "var(--color-bg-soft)" }}>
         <div className="max-w-5xl mx-auto px-6">
-          <div className="max-w-2xl mb-14 reveal">
+          <div className="max-w-2xl mx-auto text-center mb-14 reveal">
             <p className="kicker">Procedura</p>
-            <div className="deco-head"><span className="deco-line" /></div>
+            <div className="deco-head center"><span className="deco-line" /></div>
             <h2 className="sec-title text-3xl md:text-4xl mb-4">Jak zlozyc wniosek UK ETA?</h2>
             <p className="sec-lead">Caly proces zajmuje kilka minut i odbywa sie online w czterech krokach.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-7">
+          <div className="max-w-2xl mx-auto flex flex-col gap-6 text-left">
             {steps.map((s, i) => (
-              <div key={s.title} className={`step-card ${i % 2 === 1 ? "accent" : ""} reveal reveal-delay-${(i % 4) + 1}`}>
-                <span className="step-badge">{i + 1}</span>
-                <span className={`icon-circle ${i % 2 === 1 ? "icon-red" : "icon-navy"}`} style={{ width: 46, height: 46, marginTop: "0.4rem" }}><Icon name={s.icon} /></span>
-                <h3 className="feature-title">{s.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>{s.desc}</p>
+              <div key={s.title} className="flex gap-4 items-start reveal">
+                <span
+                  className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center font-semibold text-white"
+                  style={{ background: "var(--color-blue)", fontFamily: "var(--font-display)" }}
+                >
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="feature-title !mb-1">{s.title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>
-          <div className="mt-10">
+          <div className="mt-10 text-center">
             <Link href="/eta-info/application/" className="content-link font-bold">
               Szczegolowy przewodnik po procedurze
             </Link>
@@ -211,21 +194,15 @@ export default function Home() {
       {/* === Countries / UK map === */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+          <div className="max-w-2xl mx-auto text-center flex flex-col items-center gap-8">
             <div className="reveal">
               <p className="kicker">Kto potrzebuje ETA</p>
-              <div className="deco-head"><span className="deco-line" /></div>
+              <div className="deco-head center"><span className="deco-line" /></div>
               <h2 className="sec-title text-3xl md:text-4xl mb-4">Wymagana przy wjezdzie do Wielkiej Brytanii</h2>
-              <p className="sec-lead mb-5">
+              <p className="sec-lead">
                 UK ETA dotyczy obywateli panstw UE oraz dziesiatek innych krajow, ktorzy wjezdzaja do Anglii, Szkocji, Walii i Irlandii Polnocnej
                 w celach turystycznych, biznesowych lub tranzytowych.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="flag-chip"><Icon name="pin" />Anglia</span>
-                <span className="flag-chip"><Icon name="pin" />Szkocja</span>
-                <span className="flag-chip"><Icon name="pin" />Walia</span>
-                <span className="flag-chip"><Icon name="pin" />Irlandia Pln.</span>
-              </div>
             </div>
             <div className="map-panel reveal reveal-delay-1">
               <div className="flag-frame">
@@ -251,9 +228,9 @@ export default function Home() {
       {/* === FAQ === */}
       <section className="py-16 md:py-20" style={{ background: "var(--color-bg-soft)" }}>
         <div className="max-w-3xl mx-auto px-6">
-          <div className="mb-10 reveal">
+          <div className="mb-10 reveal text-center">
             <p className="kicker">FAQ</p>
-            <div className="deco-head"><span className="deco-line" /></div>
+            <div className="deco-head center"><span className="deco-line" /></div>
             <h2 className="sec-title text-3xl md:text-4xl">Najczesciej zadawane pytania</h2>
           </div>
           <div className="space-y-4">
@@ -276,9 +253,9 @@ export default function Home() {
       {/* === Related pages === */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="mb-10 reveal">
+          <div className="mb-10 reveal text-center">
             <p className="kicker">Przewodnik</p>
-            <div className="deco-head"><span className="deco-line" /></div>
+            <div className="deco-head center"><span className="deco-line" /></div>
             <h2 className="sec-title text-3xl md:text-4xl">Przydatne strony</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

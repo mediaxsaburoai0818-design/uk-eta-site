@@ -27,11 +27,11 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 no-underline">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo-uk-eta.png"
+              src="/logo-uk-eta-round.png"
               alt="UK ETA Online"
               width={48}
               height={48}
-              className="h-10 w-10 lg:h-12 lg:w-12 object-contain"
+              className="h-10 w-10 lg:h-11 lg:w-11 object-cover rounded-full bg-white shrink-0"
             />
             <div className="leading-tight">
               <span
