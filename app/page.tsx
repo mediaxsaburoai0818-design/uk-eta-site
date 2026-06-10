@@ -155,27 +155,56 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Okres waznosci / wymagania */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-4xl mx-auto text-left">
+      {/* === Okres waznosci i termin === */}
+      <section className="py-16 md:py-20" style={{ background: "var(--color-bg-soft)" }}>
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center mb-12 reveal">
+            <p className="kicker">Waznosc i termin</p>
+            <div className="deco-head center"><span className="deco-line" /></div>
+            <h2 className="sec-title text-3xl md:text-4xl mb-4">Okres waznosci ETA i termin skladania wniosku</h2>
+            <p className="sec-lead">Kiedy zlozyc wniosek i jak dlugo ETA pozostaje wazne.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
             <div className="card reveal">
-              <h3 className="feature-title mb-3">Okres waznosci ETA i termin skladania wniosku</h3>
-              <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--color-text-light)" }}>
-                <strong style={{ color: "var(--color-blue)" }}>Okres waznosci:</strong> ETA jest wazne przez 2 lata od daty wydania i pozwala na wielokrotne wjazdy do Wielkiej Brytanii. Jesli jednak Twoj paszport traci waznosc wczesniej niz za 2 lata, ETA wygasa razem z paszportem — w takim wypadku najpierw odnow paszport, a dopiero potem zloz wniosek o ETA.
-              </p>
+              <h3 className="feature-title mb-2">Okres waznosci</h3>
               <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>
-                <strong style={{ color: "var(--color-blue)" }}>Termin skladania:</strong> Decyzje otrzymasz zwykle w ciagu 3 dni roboczych, choc w niektorych przypadkach (np. prosba o dodatkowe dokumenty) moze to potrwac do 30 dni. Wniosek najlepiej zlozyc od razu po zaplanowaniu podrozy. Po zatwierdzeniu otrzymasz e-mail z potwierdzeniem autoryzacji. Przy wjezdzie zwykle nie trzeba okazywac numeru ETA, ale zaleca sie zachowanie potwierdzenia (zrzut ekranu lub wydruk).
+                ETA jest wazne przez <strong style={{ color: "var(--color-blue)" }}>2 lata</strong> od daty wydania i pozwala na wielokrotne wjazdy do Wielkiej Brytanii. Jesli jednak Twoj paszport traci waznosc wczesniej niz za 2 lata, ETA wygasa razem z paszportem — w takim wypadku najpierw odnow paszport, a dopiero potem zloz wniosek o ETA.
               </p>
             </div>
             <div className="card reveal reveal-delay-1">
-              <h3 className="feature-title mb-3">Co jest potrzebne do zlozenia wniosku o ETA</h3>
-              <ul className="text-sm leading-relaxed space-y-2.5" style={{ color: "var(--color-text-light)" }}>
-                <li className="flex gap-2.5"><span className="font-bold" style={{ color: "var(--color-red-vivid)" }}>1.</span><span>Wazny paszport (zdjecie lub skan strony ze zdjeciem)</span></li>
-                <li className="flex gap-2.5"><span className="font-bold" style={{ color: "var(--color-red-vivid)" }}>2.</span><span>Zdjecie twarzy (nie jest wymagane dla dzieci w wieku 9 lat i mlodszych)</span></li>
-                <li className="flex gap-2.5"><span className="font-bold" style={{ color: "var(--color-red-vivid)" }}>3.</span><span>Adres e-mail</span></li>
-                <li className="flex gap-2.5"><span className="font-bold" style={{ color: "var(--color-red-vivid)" }}>4.</span><span>Karta platnicza do oplaty (Visa, Mastercard, JCB, American Express, Diners Club)</span></li>
-              </ul>
+              <h3 className="feature-title mb-2">Termin skladania wniosku</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>
+                Decyzje otrzymasz zwykle w ciagu <strong style={{ color: "var(--color-blue)" }}>3 dni roboczych</strong>, choc w niektorych przypadkach (np. prosba o dodatkowe dokumenty) moze to potrwac do 30 dni. Wniosek najlepiej zlozyc od razu po zaplanowaniu podrozy. Po zatwierdzeniu otrzymasz e-mail z potwierdzeniem; przy wjezdzie zwykle nie trzeba okazywac numeru ETA, ale warto zachowac potwierdzenie (zrzut ekranu lub wydruk).
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* === Co jest potrzebne === */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center mb-12 reveal">
+            <p className="kicker">Wymagania</p>
+            <div className="deco-head center"><span className="deco-line" /></div>
+            <h2 className="sec-title text-3xl md:text-4xl mb-4">Co jest potrzebne do zlozenia wniosku</h2>
+            <p className="sec-lead">Przygotuj te cztery rzeczy, zanim zaczniesz wypelniac wniosek o ETA.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
+            {[
+              "Wazny paszport (zdjecie lub skan strony ze zdjeciem)",
+              "Zdjecie twarzy (nie jest wymagane dla dzieci w wieku 9 lat i mlodszych)",
+              "Adres e-mail",
+              "Karta platnicza do oplaty (Visa, Mastercard, JCB, American Express, Diners Club)",
+            ].map((item, i) => (
+              <div key={i} className="card flex gap-4 items-start reveal text-left">
+                <span className="flex-shrink-0 w-9 h-9 rounded-full inline-flex items-center justify-center font-semibold text-white" style={{ background: "var(--color-blue)", fontFamily: "var(--font-display)" }}>{i + 1}</span>
+                <p className="text-sm leading-relaxed pt-1" style={{ color: "var(--color-text-light)" }}>{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -226,24 +255,28 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Duza flaga = objete kraje */}
-          <div className="max-w-md mx-auto mb-16 reveal reveal-delay-1">
-            <div className="flag-frame-lg">
-              <svg viewBox="0 0 60 30" role="img" aria-label="Flaga Wielkiej Brytanii" style={{ width: "100%", height: "auto", display: "block" }}>
-                <clipPath id="ukflag"><rect width="60" height="30" rx="2" /></clipPath>
-                <g clipPath="url(#ukflag)">
-                  <rect width="60" height="30" fill="#012169" />
-                  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
-                  <path d="M0,0 L60,30" stroke="#C8102E" strokeWidth="2.4" clipPath="url(#ukflag)" />
-                  <path d="M60,0 L0,30" stroke="#C8102E" strokeWidth="2.4" />
-                  <path d="M30,0 V30 M0,15 H60" stroke="#fff" strokeWidth="10" />
-                  <path d="M30,0 V30 M0,15 H60" stroke="#C8102E" strokeWidth="6" />
-                </g>
-              </svg>
+          {/* Mapa obszaru objetego ETA */}
+          <div className="max-w-sm mx-auto mb-16 reveal reveal-delay-1">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/uk-eta-map.webp"
+              alt="Mapa Wielkiej Brytanii z zaznaczonym obszarem objetym ETA: Anglia, Szkocja, Walia i Irlandia Polnocna"
+              width={560}
+              height={951}
+              className="w-full max-w-[320px] h-auto mx-auto block"
+            />
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-sm">
+              <span className="inline-flex items-center gap-2" style={{ color: "var(--color-text)" }}>
+                <span className="inline-block w-4 h-4 rounded-sm" style={{ background: "#022444" }} />
+                Objete ETA (Wielka Brytania)
+              </span>
+              <span className="inline-flex items-center gap-2" style={{ color: "var(--color-text-light)" }}>
+                <span className="inline-block w-4 h-4 rounded-sm border" style={{ background: "#d3d8de", borderColor: "var(--color-border)" }} />
+                Poza ETA (Irlandia)
+              </span>
             </div>
-            <p className="text-center mt-6 text-xl font-semibold" style={{ color: "var(--color-blue)", fontFamily: "var(--font-display)" }}>Zjednoczone Krolestwo</p>
-            <p className="text-center mt-2 text-sm" style={{ color: "var(--color-text-light)" }}>
-              ETA obejmuje wszystkie czesci kraju: <strong style={{ color: "var(--color-blue)" }}>Anglia &middot; Szkocja &middot; Walia &middot; Irlandia Polnocna</strong>
+            <p className="text-center mt-4 text-sm" style={{ color: "var(--color-text-light)" }}>
+              ETA obejmuje <strong style={{ color: "var(--color-blue)" }}>cala Wielka Brytanie</strong>: Anglia, Szkocja, Walia i Irlandia Polnocna. Republika Irlandii nie jest objeta systemem ETA.
             </p>
           </div>
 

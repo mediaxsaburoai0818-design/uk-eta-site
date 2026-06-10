@@ -25,14 +25,24 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 no-underline">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/logo-uk-eta-round.png"
-              alt="UK ETA Online"
-              width={48}
-              height={48}
-              className="h-10 w-10 lg:h-11 lg:w-11 object-cover rounded-full bg-white shrink-0"
-            />
+            {/* Logo C — heraldic shield (crown + ETA) */}
+            <svg
+              width="40"
+              height="44"
+              viewBox="0 0 90 100"
+              role="img"
+              aria-label="UK ETA Online"
+              className="h-10 w-auto lg:h-11 shrink-0"
+            >
+              <path d="M45 6 L82 18 V52 C82 76 64 90 45 96 C26 90 8 76 8 52 V18 Z" fill="#ffffff" stroke="#C5A24A" strokeWidth="2" />
+              <path d="M45 14 L74 23 V52 C74 71 60 82 45 88 C30 82 16 71 16 52 V23 Z" fill="#022444" />
+              <g fill="#ffffff">
+                <path d="M30 50 L27 35 L36 42 L45 29 L54 42 L63 35 L60 50 Z" />
+                <rect x="30" y="51" width="30" height="6" rx="1.5" />
+              </g>
+              <circle cx="45" cy="27" r="2.6" fill="#C8102E" />
+              <text x="45" y="74" textAnchor="middle" fontFamily="Georgia, 'Times New Roman', serif" fontSize="14" fontWeight="700" fill="#ffffff">ETA</text>
+            </svg>
             <div className="leading-tight">
               <span
                 className="block text-[16px] lg:text-[19px] font-bold tracking-tight"
