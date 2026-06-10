@@ -200,9 +200,9 @@ export default function Home() {
               "Adres e-mail (na ten adres otrzymasz potwierdzenie autoryzacji ETA)",
               "Karta platnicza do oplaty (Visa, Mastercard, JCB, American Express, Diners Club)",
             ].map((item, i) => (
-              <div key={i} className="card flex gap-4 items-start reveal text-left">
+              <div key={i} className="card flex gap-4 items-center reveal text-left">
+                <p className="flex-1 text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>{item}</p>
                 <span className="flex-shrink-0 w-9 h-9 rounded-full inline-flex items-center justify-center font-semibold text-white" style={{ background: "var(--color-blue)", fontFamily: "var(--font-display)" }}>{i + 1}</span>
-                <p className="text-sm leading-relaxed pt-1" style={{ color: "var(--color-text-light)" }}>{item}</p>
               </div>
             ))}
           </div>
@@ -218,20 +218,15 @@ export default function Home() {
             <h2 className="sec-title text-3xl md:text-4xl mb-4">Jak zlozyc wniosek UK ETA?</h2>
             <p className="sec-lead">Caly proces zajmuje kilka minut i odbywa sie online w czterech krokach.</p>
           </div>
-          <div className="max-w-xl mx-auto flex flex-col items-center">
+          <div className="max-w-2xl mx-auto flex flex-col gap-5">
             {steps.map((s, i) => (
-              <div key={s.title} className="w-full">
-                <div className="text-center reveal">
-                  <span className="icon-circle icon-navy mx-auto"><Icon name={s.icon} /></span>
+              <div key={s.title} className="card flex items-start gap-5 text-left reveal">
+                <div className="flex-1">
                   <p className="kicker !mb-1">{`Krok ${i + 1}`}</p>
-                  <h3 className="sec-title text-xl md:text-2xl mb-3">{s.title}</h3>
+                  <h3 className="sec-title text-lg md:text-xl mb-2">{s.title}</h3>
                   <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>{s.desc}</p>
                 </div>
-                {i < steps.length - 1 && (
-                  <div className="flex justify-center my-8 reveal" style={{ color: "var(--color-blue)" }} aria-hidden>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M6 13l6 6 6-6" /></svg>
-                  </div>
-                )}
+                <span className="icon-circle icon-navy shrink-0 !mb-0"><Icon name={s.icon} /></span>
               </div>
             ))}
           </div>
