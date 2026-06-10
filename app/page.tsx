@@ -197,7 +197,7 @@ export default function Home() {
             {[
               "Wazny paszport (zdjecie lub skan strony ze zdjeciem)",
               "Zdjecie twarzy (nie jest wymagane dla dzieci w wieku 9 lat i mlodszych)",
-              "Adres e-mail",
+              "Adres e-mail (na ten adres otrzymasz potwierdzenie autoryzacji ETA)",
               "Karta platnicza do oplaty (Visa, Mastercard, JCB, American Express, Diners Club)",
             ].map((item, i) => (
               <div key={i} className="card flex gap-4 items-start reveal text-left">
