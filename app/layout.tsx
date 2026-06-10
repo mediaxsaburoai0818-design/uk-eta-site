@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import StickyCta from "@/components/StickyCta";
 
 const notoSans = Noto_Sans({
   subsets: ["latin", "latin-ext"],
@@ -68,6 +69,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Footer />
         <Reveal />
+        <StickyCta />
       </body>
     </html>
   );

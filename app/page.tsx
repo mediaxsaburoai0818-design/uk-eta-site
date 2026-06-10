@@ -294,7 +294,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="card">
-                <span className="inline-block text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: "var(--color-red-vivid)" }}>Tranzyt ladowy (landside)</span>
+                <span className="inline-block text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: "var(--color-blue)" }}>Tranzyt ladowy (landside)</span>
                 <p className="feature-title !text-lg mb-2">Co do zasady wymaga ETA</p>
                 <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>
                   Przy przejezdzie przez brytyjska kontrole graniczna — np. Eurostarem (pociag przez kanal La Manche) lub promem — i przejsciu odprawy granicznej, ETA jest co do zasady wymagane.
