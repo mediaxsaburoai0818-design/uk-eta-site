@@ -120,6 +120,10 @@ html {
 .sub-hero p {
   text-shadow: 0 2px 14px rgba(1, 18, 38, 0.55);
 }
+/* グローバル h1{color:navy} は非レイヤーのためTailwindの.text-whiteより優先される（v4 cascade layers）→ここで明示上書き */
+.sub-hero h1 {
+  color: #ffffff !important;
+}
 
 /* Alternating section wrapper for subpages */
 .alt-section-white {
