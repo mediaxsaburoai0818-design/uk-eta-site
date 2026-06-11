@@ -149,8 +149,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {features.map((f, i) => (
               <div key={f.title} className={`feature-card reveal reveal-delay-${i + 1}`}>
-                <span className={`icon-circle ${f.tone}`}><Icon name={f.icon} /></span>
-                <h3 className="feature-title">{f.title}</h3>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className={`icon-circle ${f.tone} shrink-0 !mb-0`}><Icon name={f.icon} /></span>
+                  <h3 className="feature-title !mb-0">{f.title}</h3>
+                </div>
                 <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-light)" }}>{f.desc}</p>
               </div>
             ))}
