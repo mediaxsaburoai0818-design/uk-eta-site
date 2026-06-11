@@ -30,11 +30,6 @@ export default function PolishCommunity() {
             <span className="deco-line" />
             Polacy w Wielkiej Brytanii
           </h1>
-          <img
-            src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=800&q=80"
-            alt="Londyn - widok na miasto"
-            className="w-full h-64 object-cover rounded mb-6"
-          />
           <p className="text-white/85 leading-relaxed">
             Wielka Brytania jest domem dla jednej z najwiekszych spolecznosci
             polskich poza granicami Polski. Okolo <strong>700 000 Polakow</strong>{" "}

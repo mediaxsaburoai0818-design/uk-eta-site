@@ -31,11 +31,6 @@ export default function WhatIsEta() {
             <span className="deco-line" />
             Czym jest UK ETA?
           </h1>
-          <img
-            src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80"
-            alt="Londyn - Tower Bridge i panorama miasta"
-            className="w-full h-64 object-cover rounded mb-6"
-          />
           <p className="text-white/85 leading-relaxed">
             UK ETA (Electronic Travel Authorisation) to elektroniczna autoryzacja
             podrozy wprowadzona przez rzad Wielkiej Brytanii w ramach nowego

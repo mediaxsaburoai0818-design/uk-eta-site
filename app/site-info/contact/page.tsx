@@ -39,7 +39,7 @@ export default function Contact() {
           </svg>
         </div>
         <h1
-          className="text-2xl font-bold text-[#022444] mb-4"
+          className="text-2xl font-bold text-white mb-4"
           style={{ fontFamily: "var(--font-noto-serif), serif" }}
         >
             <span className="deco-line" />
@@ -67,7 +67,7 @@ export default function Contact() {
         <div className="relative max-w-4xl mx-auto px-6 pt-12 pb-12 md:pt-14 md:pb-16">
           <p className="kicker mb-3 mt-4">INFORMACJE O STRONIE</p>
           <nav className="text-sm text-gray-500 mb-8">
-            <Link href="/" className="hover:text-[#022444]">
+            <Link href="/" className="hover:text-white">
               Strona glowna
             </Link>
             <span className="mx-1">/</span>

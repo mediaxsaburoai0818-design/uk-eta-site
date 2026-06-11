@@ -36,11 +36,6 @@ export default function Application() {
             &quot;UK ETA&quot; lub przez strone GOV.UK. Ponizej przedstawiamy
             szczegolowy przewodnik po calej procedurze.
           </p>
-          <img
-            src="https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&q=80"
-            alt="Paszport i dokumenty podrozne"
-            className="w-full h-56 object-cover rounded"
-          />
         </div>
       </section>
 
