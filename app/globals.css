@@ -116,6 +116,10 @@ html {
 .sub-hero nav a:hover {
   color: #fff !important;
 }
+.sub-hero h1,
+.sub-hero p {
+  text-shadow: 0 2px 14px rgba(1, 18, 38, 0.55);
+}
 
 /* Alternating section wrapper for subpages */
 .alt-section-white {
