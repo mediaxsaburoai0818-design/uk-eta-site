@@ -20,6 +20,8 @@
   --color-border: #e2e6ea;
   --color-bg-soft: #f5f8fb;       /* soft section background */
   --color-red-vivid: #d92020;     /* vivid CTA red */
+  --color-gold: #C5A24A;          /* antique gold accent (lines only) */
+  --color-gold-dark: #B08D3E;     /* gold for small text (kicker) */
   --font-display: var(--font-fraunces), Georgia, 'Times New Roman', serif; /* premium display serif */
 }
 
@@ -43,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--color-red-vivid);
+  color: var(--color-gold-dark);
   margin-bottom: 0.6rem;
 }
 
@@ -93,7 +95,7 @@ html {
   width: 56px;
   height: 3px;
   border-radius: 3px;
-  background: linear-gradient(90deg, var(--color-red-vivid), var(--color-blue) 70%);
+  background: linear-gradient(90deg, var(--color-gold), var(--color-navy) 75%);
 }
 @media (min-width: 768px) {
   .heading-band {
@@ -213,7 +215,7 @@ html {
   left: 0;
   width: 64px;
   height: 4px;
-  background: linear-gradient(90deg, var(--color-red-vivid), var(--color-blue));
+  background: linear-gradient(90deg, var(--color-gold), var(--color-navy));
   border-radius: 2px;
 }
 
@@ -272,7 +274,7 @@ html {
 .deco-head { position: relative; }
 .deco-head > .deco-line {
   display: block; width: 56px; height: 3px; margin-bottom: 0.9rem; border-radius: 3px;
-  background: linear-gradient(90deg, var(--color-red-vivid), var(--color-blue) 70%);
+  background: linear-gradient(90deg, var(--color-gold), var(--color-navy) 75%);
 }
 .deco-head.center { text-align: center; }
 .deco-head.center > .deco-line { margin-left: auto; margin-right: auto; }
@@ -283,7 +285,7 @@ html {
 
 /* Big number stat blocks */
 .stat-card { text-align: center; padding: 1.4rem 0.6rem; }
-.stat-num  { font-family: var(--font-display); font-weight: 600; color: var(--color-blue); font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.04; }
+.stat-num  { font-family: var(--font-display); font-weight: 600; color: var(--color-blue); font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.04; border-bottom: 2px solid var(--color-gold); padding-bottom: 6px; display: inline-block; }
 .stat-label{ color: var(--color-text-light); font-size: 0.82rem; margin-top: 0.55rem; letter-spacing: 0.02em; }
 
 /* Circular icon badge (feature cards) */
@@ -391,3 +393,7 @@ html {
   box-shadow: 0 22px 48px -16px rgba(2,36,68,0.5);
   border: 5px solid #fff;
 }
+
+/* === A1: antique gold accents（線にだけ金・2026-06-11 okina承認） === */
+.feature-card { border-top: 3px solid var(--color-gold); }
+.step-badge { border: 2px solid var(--color-gold); }
