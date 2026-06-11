@@ -45,13 +45,18 @@ const sections = [
 export default function Sitemap() {
   return (
     <div>
-      <section className="bg-white">
-        <div className="max-w-4xl mx-auto px-6 pt-12 pb-8">
+      <section className="sub-hero relative overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/sub-hero/sitemap.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 sub-hero-scrim" />
+        <div className="relative max-w-4xl mx-auto px-6 pt-12 pb-12 md:pt-14 md:pb-16">
+          <p className="kicker mb-3 mt-4">MAPA STRONY</p>
           <Breadcrumb items={[{ label: "Mapa strony" }]} />
           <h1
-            className="text-3xl md:text-4xl font-bold text-[#022444] mb-4"
+            className="deco-head text-3xl md:text-4xl font-bold text-white mb-4"
             style={{ fontFamily: "var(--font-noto-serif), serif" }}
           >
+            <span className="deco-line" />
             Mapa strony
           </h1>
         </div>

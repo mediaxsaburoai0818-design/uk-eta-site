@@ -11,8 +11,12 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div>
-      <section className="bg-white">
-        <div className="max-w-4xl mx-auto px-6 pt-12 pb-8">
+      <section className="sub-hero relative overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/sub-hero/about.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 sub-hero-scrim" />
+        <div className="relative max-w-4xl mx-auto px-6 pt-12 pb-12 md:pt-14 md:pb-16">
+          <p className="kicker mb-3 mt-4">INFORMACJE O STRONIE</p>
           <Breadcrumb
             items={[
               { label: "Informacje o stronie", href: "/site-info/about/" },
@@ -20,15 +24,16 @@ export default function About() {
             ]}
           />
           <h1
-            className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
+            className="deco-head text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-noto-serif), serif" }}
           >
+            <span className="deco-line" />
             O nas
           </h1>
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Cel serwisu</h2>
           <p className="text-gray-600 leading-relaxed">
@@ -40,7 +45,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Czym sie zajmujemy?</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
@@ -54,7 +59,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Wazne zastrzezenie</h2>
           <div className="bg-white border-l-4 border-[#022444] p-4 rounded-r text-sm text-gray-700">
@@ -77,7 +82,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Informacje o operatorze</h2>
           <div className="border border-gray-200 rounded p-4 text-sm text-gray-600">

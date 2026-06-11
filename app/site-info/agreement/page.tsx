@@ -11,8 +11,12 @@ export const metadata: Metadata = {
 export default function Agreement() {
   return (
     <div>
-      <section className="bg-white">
-        <div className="max-w-4xl mx-auto px-6 pt-12 pb-8">
+      <section className="sub-hero relative overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/sub-hero/agreement.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 sub-hero-scrim" />
+        <div className="relative max-w-4xl mx-auto px-6 pt-12 pb-12 md:pt-14 md:pb-16">
+          <p className="kicker mb-3 mt-4">INFORMACJE O STRONIE</p>
           <Breadcrumb
             items={[
               { label: "Informacje o stronie", href: "/site-info/about/" },
@@ -20,16 +24,17 @@ export default function Agreement() {
             ]}
           />
           <h1
-            className="text-3xl md:text-4xl font-bold text-[#022444] mb-4"
+            className="deco-head text-3xl md:text-4xl font-bold text-white mb-4"
             style={{ fontFamily: "var(--font-noto-serif), serif" }}
           >
+            <span className="deco-line" />
             Regulamin
           </h1>
           <p className="text-sm text-gray-500">Ostatnia aktualizacja: kwiecien 2026</p>
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">1. Postanowienia ogolne</h2>
           <p className="text-gray-600 leading-relaxed text-sm">
@@ -39,7 +44,7 @@ export default function Agreement() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">2. Charakter serwisu</h2>
           <p className="text-gray-600 leading-relaxed text-sm">
@@ -51,7 +56,7 @@ export default function Agreement() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">3. Uslugi</h2>
           <p className="text-gray-600 text-sm mb-3">Serwis swiadczy nastepujace uslugi:</p>
@@ -65,7 +70,7 @@ export default function Agreement() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">4. Odpowiedzialnosc</h2>
           <p className="text-gray-600 leading-relaxed text-sm">
@@ -78,7 +83,7 @@ export default function Agreement() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">5. Prawa autorskie</h2>
           <p className="text-gray-600 leading-relaxed text-sm">
@@ -89,7 +94,7 @@ export default function Agreement() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">6. Linki zewnetrzne</h2>
           <p className="text-gray-600 leading-relaxed text-sm">
@@ -99,7 +104,7 @@ export default function Agreement() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">7. Zmiany regulaminu</h2>
           <p className="text-gray-600 leading-relaxed text-sm">
@@ -109,7 +114,7 @@ export default function Agreement() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">8. Kontakt</h2>
           <p className="text-gray-600 leading-relaxed text-sm">

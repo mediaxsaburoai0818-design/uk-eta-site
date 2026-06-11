@@ -12,8 +12,12 @@ export default function WhatIsEta() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-white">
-        <div className="max-w-4xl mx-auto px-6 pt-12 pb-8">
+      <section className="sub-hero relative overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/sub-hero/what-is-eta.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 sub-hero-scrim" />
+        <div className="relative max-w-4xl mx-auto px-6 pt-12 pb-12 md:pt-14 md:pb-16">
+          <p className="kicker mb-3 mt-4">INFORMACJE O UK ETA</p>
           <Breadcrumb
             items={[
               { label: "Informacje o UK ETA", href: "/eta-info/what-is-eta/" },
@@ -21,9 +25,10 @@ export default function WhatIsEta() {
             ]}
           />
           <h1
-            className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
+            className="deco-head text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-noto-serif), serif" }}
           >
+            <span className="deco-line" />
             Czym jest UK ETA?
           </h1>
           <img
@@ -31,7 +36,7 @@ export default function WhatIsEta() {
             alt="Londyn - Tower Bridge i panorama miasta"
             className="w-full h-64 object-cover rounded mb-6"
           />
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-white/85 leading-relaxed">
             UK ETA (Electronic Travel Authorisation) to elektroniczna autoryzacja
             podrozy wprowadzona przez rzad Wielkiej Brytanii w ramach nowego
             systemu kontroli granicznej. System ten wymaga od podroznych z
@@ -42,7 +47,7 @@ export default function WhatIsEta() {
       </section>
 
       {/* Section 1 */}
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Cel systemu UK ETA</h2>
           <p className="text-gray-600 leading-relaxed">
@@ -56,7 +61,7 @@ export default function WhatIsEta() {
       </section>
 
       {/* Section 2 */}
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Kto musi posiadac UK ETA?</h2>
           <p className="text-gray-600 leading-relaxed">
@@ -69,7 +74,7 @@ export default function WhatIsEta() {
       </section>
 
       {/* Section 3 */}
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Kraje UE objete wymogiem UK ETA</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
@@ -91,7 +96,7 @@ export default function WhatIsEta() {
       </section>
 
       {/* Section 4 */}
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Kluczowe cechy UK ETA</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
@@ -106,7 +111,7 @@ export default function WhatIsEta() {
       </section>
 
       {/* Section 5 */}
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">UK ETA a wiza &mdash; roznice</h2>
           <div className="overflow-x-auto">
@@ -158,7 +163,7 @@ export default function WhatIsEta() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <div className="flex flex-col sm:flex-row gap-3">
             <Link

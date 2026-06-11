@@ -11,8 +11,12 @@ export const metadata: Metadata = {
 export default function PolishCommunity() {
   return (
     <div>
-      <section className="bg-white">
-        <div className="max-w-4xl mx-auto px-6 pt-12 pb-8">
+      <section className="sub-hero relative overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/sub-hero/polish-community.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 sub-hero-scrim" />
+        <div className="relative max-w-4xl mx-auto px-6 pt-12 pb-12 md:pt-14 md:pb-16">
+          <p className="kicker mb-3 mt-4">INFORMACJE O UK ETA</p>
           <Breadcrumb
             items={[
               { label: "Informacje o UK ETA", href: "/eta-info/what-is-eta/" },
@@ -20,9 +24,10 @@ export default function PolishCommunity() {
             ]}
           />
           <h1
-            className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
+            className="deco-head text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-noto-serif), serif" }}
           >
+            <span className="deco-line" />
             Polacy w Wielkiej Brytanii
           </h1>
           <img
@@ -30,7 +35,7 @@ export default function PolishCommunity() {
             alt="Londyn - widok na miasto"
             className="w-full h-64 object-cover rounded mb-6"
           />
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-white/85 leading-relaxed">
             Wielka Brytania jest domem dla jednej z najwiekszych spolecznosci
             polskich poza granicami Polski. Okolo <strong>700 000 Polakow</strong>{" "}
             mieszka w UK, co czyni jezyk polski jednym z najczesciej uzywanych
@@ -39,7 +44,7 @@ export default function PolishCommunity() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">UK ETA a Polacy mieszkajacy w Wielkiej Brytanii</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -57,7 +62,7 @@ export default function PolishCommunity() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Glowne skupiska Polakow w UK</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -78,7 +83,7 @@ export default function PolishCommunity() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Przydatne organizacje i zasoby</h2>
           <ul className="space-y-3 text-gray-600">
@@ -95,7 +100,7 @@ export default function PolishCommunity() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Konsulaty RP w Wielkiej Brytanii</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
@@ -107,7 +112,7 @@ export default function PolishCommunity() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">Odwiedzanie rodziny i przyjaciol w UK</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -126,7 +131,7 @@ export default function PolishCommunity() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <h2 className="heading-band mb-6">EU Settlement Scheme &mdash; status stalego rezydenta</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -143,7 +148,7 @@ export default function PolishCommunity() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 reveal">
         <div className="max-w-4xl mx-auto px-6 py-10">
           <div className="flex flex-col sm:flex-row gap-3">
             <Link

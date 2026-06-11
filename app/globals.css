@@ -73,26 +73,48 @@ html {
   color: var(--color-navy-light);
 }
 
+/* 下層h2: 旧navy帯 → TOP統一デザイン（serif見出し＋上部のオシャレ線）2026-06-11 */
 .heading-band {
-  background-color: #022444;
-  color: white !important;
-  padding: 1rem 1.5rem;
-  font-weight: bold;
-  font-size: 1.125rem;
+  background: none;
+  color: #022444 !important;
+  padding: 0.9rem 0 0 0;
+  font-weight: 700;
+  font-family: var(--font-noto-serif), serif;
+  font-size: 1.35rem;
   line-height: 1.4;
   word-break: break-word;
+  position: relative;
 }
-@media (max-width: 767px) {
-  .heading-band {
-    font-size: 1.125rem;
-    padding: 1rem 1.25rem;
-  }
+.heading-band::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--color-red-vivid), var(--color-blue) 70%);
 }
 @media (min-width: 768px) {
   .heading-band {
-    font-size: 1.5rem;
-    padding: 0.75rem 1.5rem;
+    font-size: 1.65rem;
   }
+}
+
+/* 下層ヒーロー: ページ別UK背景＋薄い紺青オーバーレイ */
+.sub-hero {
+  color: #fff;
+}
+.sub-hero-scrim {
+  background: linear-gradient(180deg, rgba(2, 36, 68, 0.88) 0%, rgba(2, 36, 68, 0.72) 55%, rgba(2, 36, 68, 0.82) 100%);
+}
+.sub-hero nav,
+.sub-hero nav a,
+.sub-hero nav span {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+.sub-hero nav a:hover {
+  color: #fff !important;
 }
 
 /* Alternating section wrapper for subpages */

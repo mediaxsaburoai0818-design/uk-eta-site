@@ -99,7 +99,7 @@ export default function Home() {
       {/* === Hero === */}
       <section className="relative text-white min-h-[460px] md:min-h-[640px] flex items-center overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/hero-uk.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/hero-uk.jpg" alt="" className="absolute inset-0 w-full h-full object-cover object-[22%_center] md:object-center" />
         <div className="absolute inset-0 hero-scrim" />
         <div className="relative max-w-5xl mx-auto px-6 py-20 md:py-28 w-full">
           <div className="max-w-3xl mx-auto text-center reveal">
